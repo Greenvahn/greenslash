@@ -1,6 +1,6 @@
 <template>
   <nav class="bg-white bg-opacity-0">
-    <div class="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8">
+    <div class="mx-auto sm:px-6 lg:px-32 lg:py-16">
       <div class="flex items-center justify-between h-32">
 
           <div class="flex items-center grid-cols-12">
@@ -17,13 +17,13 @@
             </div>
             <div class="flex-auto grid-cols-8">
               <h1 class="title-path">
-                <img src="./../assets/codeArrow.svg" width="110" class="mr-4" />
+                <img src="./../assets/codeArrow.svg" width="110" class="mr-4 opacity-50" />
                 H3L!O WORLD
               </h1>
             </div>
           </div>
           <div class="grid-cols-4">
-              <button class="btn-green">RESUME</button>
+              <button class="btn-green mr-7">RESUME</button>
           </div>
 
       </div>
