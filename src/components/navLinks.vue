@@ -1,7 +1,7 @@
 <template>
-    <a v-for="(item, index) in links" :key="index" href="#" class="link-green"
-      >{{ item.link }}
-    </a>
+    <router-link v-for="(item, index) in links" :key="index" :to="item.path" class="link-green"
+      >{{ item.name }}
+    </router-link>
 </template>
 
 <script>

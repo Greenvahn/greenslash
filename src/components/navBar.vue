@@ -41,10 +41,10 @@ export default {
   },
   setup() {
     const navItems = [
-      { link: "HOME", path: "#" },
-      { link: "PROJECTS", path: "#" },
-      { link: "ABOUT", path: "#" },
-      { link: "CONTACT", path: "#" },
+      { name: "HOME", path: "/" },
+      { name: "PROJECTS", path: "/projects" },
+      { name: "ABOUT", path: "/about" },
+      { name: "CONTACT", path: "/contact" },
     ];
 
     return { navItems };
