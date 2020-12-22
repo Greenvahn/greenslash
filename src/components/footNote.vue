@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-row">
-    <p class="footNote">MADE BY SAUL VERDE / GREENSLASH</p>
+  <div class="w-64 lg:ml-32">
+    <p class="footNote pt-12 mt-24 w-64">MADE BY SAUL VERDE / GREENSLASH</p>
   </div>
 </template>
 
@@ -13,6 +13,8 @@ name: 'FootNote'
 <style scoped>
 .footNote {
   font-size: 10px;
-  transform: translate(-50px, 80px) rotate(-90deg);
+  transform-origin: left;
+  transform: rotate(-90deg);
+  opacity: 0.4;
 }
 </style>

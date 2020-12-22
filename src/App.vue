@@ -1,9 +1,9 @@
 <template>
   <NavBar />
-  <Content>
-    <FootNote />
-    <router-view />
-  </Content>
+    <Content>
+      <FootNote />
+      <router-view />
+    </Content>
 </template>
 
 <script>
