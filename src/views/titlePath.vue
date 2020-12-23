@@ -4,9 +4,9 @@
       src="./../assets/codeArrow.svg"
       width="110"
       class="mr-4 opacity-50"
-      v-if="$route"
+      v-if="$route.name"
     />
-    <span v-if="$route">{{ $route.name }}</span>
+    <span v-if="$route.name">{{ $route.name }}</span>
   </h1>
 </template>
 
