@@ -4,9 +4,9 @@
       src="./../assets/codeArrow.svg"
       width="110"
       class="mr-4 opacity-50"
-      v-if="$route.params.id"
+      v-if="$route"
     />
-    <span v-if="$route.params.id">{{ $route.params.id }}</span>
+    <span v-if="$route">{{ $route.name }}</span>
   </h1>
 </template>
 
@@ -15,7 +15,8 @@
 export default {
   name: "titlePath",
   props: {
-    id: String
+    id: String,
+    extra: String
   },
 };
 </script>

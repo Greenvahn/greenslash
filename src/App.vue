@@ -1,9 +1,11 @@
 <template>
   <NavBar />
-    <Content>
-      <FootNote />
+  <Content>
+    <FootNote />
+    <keep-alive include="ABOUT">
       <router-view />
-    </Content>
+    </keep-alive>
+  </Content>
 </template>
 
 <script>
@@ -16,7 +18,7 @@ export default {
   components: {
     NavBar,
     Content,
-    FootNote
+    FootNote,
   },
 };
 </script>
