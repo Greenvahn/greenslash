@@ -8,29 +8,34 @@ import NotFound from "../views/NotFound.vue";
 const routes = [
   {
     path: "/",
-    name: "Home",
+    name: "HOME",
     component: Home,
+    props: true
   },
   {
     path: "/about",
-    name: "About",
+    name: "ABOUT",
     component: About,
+    props: true
   },
   {
     path: "/projects",
-    name: "Projects",
+    name: "PROJECTS",
     component: Projects,
+    props: true
   },
   {
     path: "/contact",
-    name: "Contact",
+    name: "CONTACT",
     component: Contact,
+    props: true
   },
   // Cacth 404
   {
     path : '/:catchAll(.*)',
-    name: 'NotFound',
-    component: NotFound
+    name: '404',
+    component: NotFound,
+    props: true
   },
 ];
 
@@ -38,5 +43,6 @@ const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
 });
+
 
 export default router;
