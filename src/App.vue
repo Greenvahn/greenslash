@@ -3,8 +3,8 @@
   <Content>
     <FootNote />
     <router-view v-slot="{ Component }">
-      <transition name="slide-fade">
-        <component :is="Component" />
+      <transition name="slide-fade" mode="out-in">
+        <component :is="Component" class="block"/>
       </transition>
     </router-view>
   </Content>

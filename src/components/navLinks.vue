@@ -3,7 +3,7 @@
     <router-link
       v-for="(item, index) in links"
       :key="index"
-      :to="{ name: item.name, params: { id: item.id, extra: item.extra } }"
+      :to="{ name: item.name, params: { id: item.id} }"
       class="link-green"
       >{{ item.name }}
       <!-- <TitlePath :active="isActive" :id="item.id"/> -->
