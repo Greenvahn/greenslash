@@ -2,9 +2,11 @@
   <NavBar />
   <Content>
     <FootNote />
-    <transition name="slide-fade">
-      <router-view />
-    </transition>
+    <router-view v-slot="{ Component }">
+      <transition name="slide-fade">
+        <component :is="Component" />
+      </transition>
+    </router-view>
   </Content>
 </template>
 
@@ -23,7 +25,5 @@ export default {
 };
 </script>
 
-<style src="./assets/tailwind.css" ></style>
-<style>
-  @import './assets/transitions.css';
-</style>
+<style src="./assets/tailwind.css"></style>
+<style>@import "./assets/transitions.css";</style>
