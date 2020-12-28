@@ -2,9 +2,9 @@
   <NavBar />
   <Content>
     <FootNote />
-    <keep-alive include="ABOUT">
+    <transition name="slide-fade">
       <router-view />
-    </keep-alive>
+    </transition>
   </Content>
 </template>
 
@@ -23,4 +23,5 @@ export default {
 };
 </script>
 
-<style src="./assets/tailwind.css" />
+<style src="./assets/tailwind.css" ></style>
+<style src="./assets/transitions.css"></style>
