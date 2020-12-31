@@ -1,0 +1,14 @@
+/* Transitions */
+.slide-fade-enter-active, .slide-fade-leave-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-fade-enter-active {
+  transition-delay: 0.3s;
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(-50px);
+  opacity: 0;
+}

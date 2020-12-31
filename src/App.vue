@@ -1,9 +1,13 @@
 <template>
   <NavBar />
-    <Content>
-      <FootNote />
-      <router-view />
-    </Content>
+  <Content>
+    <FootNote />
+    <router-view v-slot="{ Component }">
+      <transition name="slide-fade" mode="out-in">
+        <component :is="Component" class="block"/>
+      </transition>
+    </router-view>
+  </Content>
 </template>
 
 <script>
@@ -16,9 +20,10 @@ export default {
   components: {
     NavBar,
     Content,
-    FootNote
+    FootNote,
   },
 };
 </script>
 
-<style src="./assets/tailwind.css" />
+<style src="./assets/tailwind.css"></style>
+<style>@import "./assets/transitions.css";</style>

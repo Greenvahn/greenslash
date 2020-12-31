@@ -8,7 +8,8 @@
               src="./../assets/Logo.svg"
               alt="logo"
               width="125"
-              class="mr-4"
+              class="mr-4 cursor-pointer"
+              @click="redirect"
             />
           </div>
           <NavLinks :links="navItems" />
@@ -23,6 +24,7 @@
 
 <script>
 import NavLinks from "./navLinks";
+import { useRouter } from "vue-router";
 
 export default {
   name: "NavBar",
@@ -30,16 +32,19 @@ export default {
     NavLinks,
   },
   setup() {
-  const navItems = [
+    const router = useRouter();
+    const navItems = [
       { name: "HOME", path: "/", id: "HOME" },
-      { name: "PROJECTS", path: "/projects", id: "PR0!ECT5" },
-      { name: "ABOUT", path: "/about", id: "A3OUT" },
-      { name: "CONTACT", path: "/contact", id: "C0NT4CT" },
+      { name: "ABOUT", path: "/ABOUT", id: "ABOUT" },
+      { name: "WORK", path: "/WORK", id: "WORK" },
+      { name: "CONTACT", path: "/CONTACT", id: "CONTACT" },
     ];
 
-    return { navItems };
+    const redirect = () => {
+      router.push({ name: "HOME" });
+    };
+
+    return { navItems, redirect };
   },
 };
 </script>
-
-<style></style>
