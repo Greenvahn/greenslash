@@ -7,20 +7,20 @@
       </transition>
     </router-view>
   </Content>
-  <FootNote />
+  <Footer />
 </template>
 
 <script>
 import NavBar from "./components/navBar";
 import Content from "./components/mainContent";
-import FootNote from "./components/footNote";
+import Footer from "./components/footer";
 
 export default {
   name: "App",
   components: {
     NavBar,
     Content,
-    FootNote,
+    Footer,
   },
 };
 </script>
