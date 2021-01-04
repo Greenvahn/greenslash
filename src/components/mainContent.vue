@@ -1,0 +1,19 @@
+<template>
+  <main id="content" class="mx-auto max-w-full">
+    <div class="content-wrap">
+      <slot></slot>
+    </div>
+  </main>
+</template>
+
+<script>
+export default {
+  name: "Content blocks",
+};
+</script>
+
+<style lang="scss" scoped>
+  .content-wrap {
+    @apply flex items-center h-64 min-h-full mt-8
+  }
+</style>
