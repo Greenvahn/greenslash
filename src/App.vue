@@ -1,18 +1,18 @@
 <template>
   <NavBar />
   <Content>
-    <FootNote />
     <router-view v-slot="{ Component }">
       <transition name="slide-fade" mode="out-in">
-        <component :is="Component" class="block"/>
+        <component :is="Component"/>
       </transition>
     </router-view>
   </Content>
+  <FootNote />
 </template>
 
 <script>
 import NavBar from "./components/navBar";
-import Content from "./components/contentBlock";
+import Content from "./components/mainContent";
 import FootNote from "./components/footNote";
 
 export default {
