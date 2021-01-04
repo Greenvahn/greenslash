@@ -29,11 +29,12 @@ export default {
 };
 </script>
 
-<style scoped>
+
+<style lang="scss" scoped>
 .icon {
   opacity: 0.5;
-}
-.icon:hover {
-  opacity: 1;
+  &:hover{
+    opacity: 1;
+  }
 }
 </style>
