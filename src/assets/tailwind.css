@@ -28,12 +28,6 @@
     @apply bg-white bg-opacity-0 flex flex-col px-3 font-medium hover:text-slashgreen focus:text-slashgreen
   }
   .title-path {
-    @apply bg-white bg-opacity-0 px-3 py-2 text-neutral-100 text-5xl font-museomoderno font-bold flex items-center
-  }
-
-  /* SECTIONS */
-  /*=======================*/
-  .content-wrap {
-    @apply flex items-center h-64 min-h-full
+    @apply bg-white bg-opacity-0 px-5 py-2 text-neutral-100 text-5xl font-museomoderno font-bold flex items-center
   }
 }

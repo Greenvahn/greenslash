@@ -25,6 +25,6 @@ export default {
 
 <style scoped>
 .wrapper-view {
-  @apply flex grid w-auto grid-cols-3 ml-8 mr-32;
+  @apply flex grid w-auto grid-cols-3 ml-64 mr-32 pl-6;
 }
 </style>

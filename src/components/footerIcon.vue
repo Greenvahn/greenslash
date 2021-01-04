@@ -3,8 +3,8 @@
     xmlns="http://www.w3.org/2000/svg"
     :width="width"
     :height="height"
-    class="icon mt-5"
-    viewBox="0 0 16 16"
+    class="icon-footer"
+    viewBox="0 0 50 50"
   >
     <path :d="path()" />
   </svg>
@@ -31,10 +31,19 @@ export default {
 
 
 <style lang="scss" scoped>
-.icon {
+.icon-footer {
   opacity: 0.5;
+  fill: none;
+  stroke-width: 2;
+  stroke: currentColor;
+  transition: top 0.2s ease-in;
+  position: relative;
+  top: 0px;
+  margin-top: 15px;
   &:hover{
     opacity: 1;
+    stroke: #21D896;
+    top: -5px;
   }
 }
 </style>

@@ -1,11 +1,11 @@
 <template>
-  <footer class="fixed-footer">
-    <p class="footNote">MADE BY SAUL VERDE / GREENSLASH</p>
-    <ul class="footer-links">
+  <footer class="fixed-footer w-full fixed bottom-16 left-8">
+    <p class="footNote absolute origin-left transform -rotate-90 left-4 opacity-40 px-8 text-xs">MADE BY SAUL VERDE / GREENSLASH</p>
+    <ul class="footer-links w-8">
       <li v-for="(item, index) in footerLinks" :key="index">
         <a :href="item.link" :aria-label="item.name">
           <!-- <img class="w-3.5 mt-5" :src="item.icon" /> -->
-          <FooterIcon :name="item.name" :width="25" :height="25" />          
+          <FooterIcon :name="item.name" :width="30" :height="30" />
         </a>
       </li>
     </ul>
@@ -13,44 +13,28 @@
 </template>
 
 <script>
-import FooterIcon from './footerIcon'
+import FooterIcon from "./footerIcon";
 export default {
   name: "FootNote",
   components: {
-    FooterIcon
+    FooterIcon,
   },
   setup() {
     const footerLinks = [
       {
         name: "github",
-        link: "https://github.com/Greenvahn"
+        link: "https://github.com/Greenvahn",
       },
       {
         name: "linkedin",
-        link: "https://www.linkedin.com/in/saul-verde-martinez/"
+        link: "https://www.linkedin.com/in/saul-verde-martinez/",
       },
       {
         name: "twitter",
-        link: "https://twitter.com/Greenvahn"
-      }
+        link: "https://twitter.com/Greenvahn",
+      },
     ];
     return { footerLinks };
   },
 };
 </script>
-
-<style scoped>
-.fixed-footer {
-  width: 100%;
-  left: 20px;
-  bottom: 20px;
-  position: fixed;
-}
-.footNote {
-  width: 100%;
-  font-size: 10px;
-  transform-origin: left;
-  transform: rotate(-90deg);
-  opacity: 0.4;
-}
-</style>

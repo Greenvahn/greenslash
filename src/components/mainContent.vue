@@ -12,4 +12,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+  .content-wrap {
+    @apply flex items-center h-64 min-h-full mt-8
+  }
+</style>
