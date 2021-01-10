@@ -15,7 +15,7 @@
           <NavLinks :links="navItems" />
         </div>
         <div class="grid-cols-4">
-          <button class="btn-green mr-7">RESUME</button>
+          <a class="btn-green mr-7 cursor-pointer" href="saulverde_cv_2021.pdf" target="_blank">RESUME</a>
         </div>
       </div>
     </div>
