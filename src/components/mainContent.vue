@@ -14,6 +14,6 @@ export default {
 
 <style lang="scss" scoped>
   .content-wrap {
-    @apply flex items-center h-64 min-h-full mt-8
+    @apply flex items-center h-auto min-h-full mt-8
   }
 </style>

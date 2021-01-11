@@ -5,19 +5,30 @@
       class="inline-block col-span-1"
     />
     <div class="content col-span-2 space-y-4">
-      <h1 class="text-3xl h-12">This is home template</h1>
+      <h1 class="text-3xl h-12">About me</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-        volutpat.
+        Hello! I'm Saul, front-end developer based in Lodon, UK.
       </p>
       <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-        volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-        diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-        volutpat.
+        I like to build products for the internet with great user interfaces and
+        performant experiences. I’m strong team player who truly believes on
+        collaborative work, always eager to explore new paths.
       </p>
+      <p>
+        In my spare time I create small web applications while learning new
+        programming languages. I also playing handball and running for a few
+        years now. Love technology, videogames and cinema.
+      </p>
+    </div>
+    <div class="content col-span-2 mt-6 space-y-4">
+      <p>Here are few technologies I’ve been working with recently:</p>
+      <ul>
+        <li>Javascript (ES6+)</li>
+        <li>Vue</li>
+        <li>React</li>
+        <li>HTML & (S)CSS</li>
+        <li>Node.js</li>
+      </ul>
     </div>
   </div>
 </template>
