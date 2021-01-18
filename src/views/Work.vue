@@ -9,30 +9,39 @@
       </p>
     </div>
 
-    <div class="col-span-1 w-auto max-w-xs">
-
-      <img :src="require('../assets/work-img-sample.jpg')" />
-
-      <div class=" content grid grid-cols-3 gap-2 bg-black text-white max-w-xs">
-        <div class="col-span-3 text-sm p-3">
-          <h3 class="font-bold py-2 ">THIS IS THE PROJECT TITLE</h3>
-          <p>
-            Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh
-            euismod tincidunt ut laoreet dolore magna.
-          </p>
-          <p class="mt-6 font-museomoderno">Node   Express   Firebase   Vue</p>
+    <div class="project-card col-span-1 w-auto max-w-xs min-w-200">
+      <div class="-mt-10">
+        <div id="links-box" class="relative flex justify-end top-10">
+          <div class="link mx-2 w-auto">
+            <a href="#" target="_blank" class="w-auto">
+              <IconLink name="openLink" :width="25" :height="25" />
+            </a>
+          </div>
+          <div class="link mx-2 w-auto">
+            <a href="#" target="_blank" class="w-auto">
+              <IconLink name="openLink" :width="25" :height="25" />
+            </a>
+          </div>
         </div>
-      </div>
-      <div id="links-box" class="content flex justify-end">
-        <div class="link mx-2">
-          <a href="#" target="_blank" class="w-auto">
-            <IconLink name="openLink" :width="25" :height="25" />
-          </a>
-        </div>
-        <div class="link mx-2">
-          <a href="#" target="_blank" class="w-auto">
-            <IconLink name="openLink" :width="25" :height="25" />
-          </a>
+
+        <img :src="require('../assets/work-img-sample.jpg')" />
+
+        <div
+          class="content grid grid-cols-3 gap-2 bg-black text-white max-w-xs"
+        >
+          <div class="col-span-3 text-sm p-3">
+            <h3 class="font-bold py-2 ">THIS IS THE PROJECT TITLE</h3>
+            <p>
+              Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh
+              euismod tincidunt ut laoreet dolore magna.
+            </p>
+            <ul class="mt-6 font-museomoderno space-x-4">
+              <li class="inline-block">Node</li>
+              <li class="inline-block">Express</li>
+              <li class="inline-block">Firebase</li>
+              <li class="inline-block">Vue</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -53,8 +62,15 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss">
 .wrapper-view {
   @apply flex grid w-auto grid-cols-3 gap-4 ml-64 pl-6;
+}
+
+.project-card {
+  transition: margin-top 0.2s ease-in;
+  &:hover {
+    margin-top: -5px;
+  }
 }
 </style>

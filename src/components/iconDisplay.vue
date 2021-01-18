@@ -36,14 +36,14 @@ export default {
   fill: none;
   stroke-width: 2;
   stroke: currentColor;
-  transition: top 0.2s ease-in;
-  position: relative;
-  top: 0px;
-  margin-top: 15px;
+  // transition: top 0.2s ease-in;
+  // position: relative;
+  // top: 0px;
+  // margin-top: 15px;
   &:hover {
     opacity: 1;
     stroke: #21d896;
-    top: -5px;
+    // top: -5px;
   }
 }
 </style>
