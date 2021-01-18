@@ -28,7 +28,15 @@ module.exports = {
     fontFamily: {
       opensans: ['Open Sans', 'Verdana', 'sans-serif'],
       museomoderno: ['Museo Moderno']
-    }
+    },
+    minWidth: {
+      '0': '0',
+      '1/4': '25%',
+      '1/2': '50%',
+      '3/4': '75%',
+      'full': '100%',
+      '200' : '200px'
+     }
   },
   variants: {},
 }
