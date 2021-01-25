@@ -8,20 +8,26 @@
         volutpat.
       </p>
     </div>
-
-    <ProjectCard id="project01"/>
-    <ProjectCard id="project02"/>
-    <ProjectCard id="project02"/>
+    <ProjectCard
+      v-for="(card, index) in cards"
+      :card="card"
+      :key="index"
+    />
   </div>
 </template>
 
 <script>
 import ProjectCard from "../components/projectCard";
+import dataWorks from "../content/works"
 
 export default {
   name: "Work",
   components: {
     ProjectCard,
+  },
+  setup() {
+    const cards = dataWorks;
+    return { cards };
   },
 };
 </script>

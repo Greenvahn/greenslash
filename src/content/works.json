@@ -1,0 +1,62 @@
+[
+  {
+    "id": "Work01",
+    "title": "THIS IS THE PROJECT TILE",
+    "content": [
+      {
+        "text": "Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna."
+      }
+    ],
+    "frameworks": [
+      { "name": "Node" },
+      { "name": "Express" },
+      { "name": "Firebase" },
+      { "name": "Vue" }
+    ],
+    "icons": [
+      { "name": "githubFull", "w": 24, "h": 24 },
+      { "name": "openLink", "w": 25, "h": 25 }
+    ],
+    "img": "work-img-sample.jpg"
+  },
+  {
+    "id": "Work02",
+    "title": "THIS IS THE PROJECT TILE",
+    "content": [
+      {
+        "text": "Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna."
+      }
+    ],
+    "frameworks": [
+      { "name": "Node" },
+      { "name": "Express" },
+      { "name": "Firebase" },
+      { "name": "Vue" }
+    ],
+    "icons": [
+      { "name": "githubFull", "w": 24, "h": 24 },
+      { "name": "openLink", "w": 25, "h": 25 }
+    ],
+    "img": "work-img-sample.jpg"
+  },
+  {
+    "id": "Work03",
+    "title": "THIS IS THE PROJECT TILE",
+    "content": [
+      {
+        "text": "Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna."
+      }
+    ],
+    "frameworks": [
+      { "name": "Node" },
+      { "name": "Express" },
+      { "name": "Firebase" },
+      { "name": "Vue" }
+    ],
+    "icons": [
+      { "name": "githubFull", "w": 24, "h": 24 },
+      { "name": "openLink", "w": 25, "h": 25 }
+    ],
+    "img": "work-img-sample.jpg"
+  }
+]
