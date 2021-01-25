@@ -1,25 +1,34 @@
 <template>
-  <div class="wrapper-view">
+  <div v-for="(intro, index) in introduction" :key="index" class="wrapper-view">
     <div class="col-span-3">
-      <h1 class="text-3xl h-12">This is home template</h1>
-      <p class="max-w-xl">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-        volutpat.
+      <h1 class="text-5xl h-12 bold mb-8">{{ intro.title }}</h1>
+      <p v-for="(p, index) in intro.content" :key="index" class="max-w-xl">
+        {{p.text}}
       </p>
     </div>
-    <div class="col-span-3 py-12">
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+    <div class="col-span-3 mt-10">
+      <a v-for="(button, index) in intro.buttons" :key="index"
+        class="btn-green mr-7 cursor-pointer"
+        :href="button.url"
+        target="_blank"
+        >{{button.text}}</a
+      >
     </div>
   </div>
 </template>
 
 <script>
+import dataHome from "../content/home";
+
 export default {
   name: "Home",
+  props: {
+    dataHome: Object,
+  },
+  setup() {
+    const introduction = dataHome;
+    return {introduction};
+  },
 };
 </script>
 
