@@ -1,5 +1,5 @@
 <template>
-  <div class="project-card col-span-1 w-auto max-w-xs min-w-200">
+  <div class="project-card col-span-1 w-auto max-w-xs min-w-200 mb-5">
     <div class="-mt-10">
       <div id="links-box" class="relative flex justify-end top-10 mr-2">
         <div class="link mx-2 w-auto">
