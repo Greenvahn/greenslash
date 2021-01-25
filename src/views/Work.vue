@@ -8,10 +8,11 @@
         volutpat.
       </p>
     </div>
-
-    <ProjectCard id="project01"/>
-    <ProjectCard id="project02"/>
-    <ProjectCard id="project02"/>
+    <ProjectCard
+      v-for="(card, index) in cards"
+      :card="card"
+      :key="index"
+    />
   </div>
 </template>
 
@@ -22,6 +23,69 @@ export default {
   name: "Work",
   components: {
     ProjectCard,
+  },
+  setup() {
+    const cards = [
+      {
+        title: "THIS IS THE PROJECT TILE",
+        content: [
+          {
+            text: "Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+          },
+        ],
+        frameworks: [
+          { name: "Node" },
+          { name: "Express" },
+          { name: "Firebase" },
+          { name: "Vue" }
+        ],
+        icons: [
+          { name: "githubFull", w: 24, h: 24 },
+          { name: "openLink", w: 25, h: 25 },
+        ],
+        img: "work-img-sample.jpg",
+      },
+      {
+        title: "THIS IS THE PROJECT TILE",
+        content: [
+          {
+            text: "Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+          },
+        ],
+        frameworks: [
+          { name: "Node" },
+          { name: "Express" },
+          { name: "Firebase" },
+          { name: "Vue" }
+        ],
+        icons: [
+          { name: "githubFull", w: 24, h: 24 },
+          { name: "openLink", w: 25, h: 25 },
+        ],
+        img: "work-img-sample.jpg",
+      },
+      {
+        title: "THIS IS THE PROJECT TILE",
+        content: [
+          {
+            text: "Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.",
+          },
+        ],
+        frameworks: [
+          { name: "Node" },
+          { name: "Express" },
+          { name: "Firebase" },
+          { name: "Vue" }
+        ],
+        icons: [
+          { name: "githubFull", w: 24, h: 24 },
+          { name: "openLink", w: 25, h: 25 },
+        ],
+        img: "work-img-sample.jpg",
+      },
+    ];
+
+    return { cards };
   },
 };
 </script>
