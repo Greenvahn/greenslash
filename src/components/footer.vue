@@ -4,8 +4,9 @@
     <ul class="footer-links w-8">
       <li v-for="(item, index) in footerLinks" :key="index">
         <a :href="item.link" :aria-label="item.name">
-          <!-- <img class="w-3.5 mt-5" :src="item.icon" /> -->
-          <FooterIcon :name="item.name" :width="30" :height="30" />
+          <a :href="item.link" target="_blank" class="w-auto">
+            <IconLink :name="item.name" :width="item.w" :height="item.h" :style="item.style" />
+          </a>
         </a>
       </li>
     </ul>
@@ -13,25 +14,43 @@
 </template>
 
 <script>
-import FooterIcon from "./footerIcon";
+import IconLink from "../components/iconDisplay";
+
+
 export default {
   name: "FootNote",
   components: {
-    FooterIcon,
+    IconLink
   },
   setup() {
     const footerLinks = [
       {
         name: "github",
+        w: 40,
+        h: 40,
+        style: 'icon-outlined relative -left-2 mb-2',
         link: "https://github.com/Greenvahn",
       },
       {
         name: "linkedin",
+        w: 40,
+        h: 40,
+        style: 'icon-outlined relative -left-2 mb-2',
         link: "https://www.linkedin.com/in/saul-verde-martinez/",
       },
       {
         name: "twitter",
+        w: 40,
+        h: 40,
+        style: 'icon-outlined relative -left-2 mb-2',
         link: "https://twitter.com/Greenvahn",
+      },
+      {
+        name: "benhance",
+        w: 40,
+        h: 40,
+        style: 'icon-outlined relative -left-2 mb-2',
+        link: "https://www.behance.net/saulverde",
       },
     ];
     return { footerLinks };

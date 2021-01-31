@@ -4,7 +4,7 @@
       <div id="links-box" class="relative flex justify-end top-10 mr-2">
         <div v-for="(icon, index) in card.icons" :key="index" class="link mx-2 w-auto">
           <a href="#" target="_blank" class="w-auto">
-            <IconLink :name="icon.name" :width="icon.w" :height="icon.h" />
+            <IconLink :name="icon.name" :width="icon.w" :height="icon.h" :style="icon.style" />
           </a>
         </div>
         <!-- <div class="link mx-2 w-auto">

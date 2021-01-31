@@ -1,5 +1,5 @@
 <template>
-  <div class="icon-display">
+  <div :class="style">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       :width="width"
@@ -19,6 +19,7 @@ export default {
     name: String,
     width: Number,
     height: Number,
+    style: String,
   },
   setup(props) {
     const iconLoader = () => {
@@ -31,7 +32,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.icon-display {
+.icon-filled {
   opacity: 0.5;
   svg path {
     fill: #0000;
@@ -41,6 +42,22 @@ export default {
     svg {
       opacity: 1;
       fill: #21d896;
+    }
+  }
+}
+
+.icon-outlined {
+  opacity: 0.5;
+  svg {
+    fill: none;
+    opacity: 1;
+    stroke: #000;
+  }
+  &:hover {
+    opacity: 1;
+    svg {
+      opacity: 1;
+      stroke: #21d896;
     }
   }
 }
