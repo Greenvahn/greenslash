@@ -14,8 +14,8 @@
       { "name": "Vue" }
     ],
     "icons": [
-      { "name": "githubFull", "w": 24, "h": 24 },
-      { "name": "openLink", "w": 25, "h": 25 }
+      { "name": "githubFull", "w": 24, "h": 24, "style": "icon-filled" },
+      { "name": "openLink", "w": 25, "h": 25, "style": "icon-filled" }
     ],
     "img": "work-img-sample.jpg"
   },
@@ -34,8 +34,8 @@
       { "name": "Vue" }
     ],
     "icons": [
-      { "name": "githubFull", "w": 24, "h": 24 },
-      { "name": "openLink", "w": 25, "h": 25 }
+      { "name": "githubFull", "w": 24, "h": 24, "style": "icon-filled" },
+      { "name": "openLink", "w": 25, "h": 25, "style": "icon-filled" }
     ],
     "img": "work-img-sample.jpg"
   },
@@ -54,8 +54,8 @@
       { "name": "Vue" }
     ],
     "icons": [
-      { "name": "githubFull", "w": 24, "h": 24 },
-      { "name": "openLink", "w": 25, "h": 25 }
+      { "name": "githubFull", "w": 24, "h": 24, "style": "icon-filled" },
+      { "name": "openLink", "w": 25, "h": 25, "style": "icon-filled" }
     ],
     "img": "work-img-sample.jpg"
   }
