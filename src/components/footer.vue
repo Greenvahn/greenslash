@@ -1,6 +1,6 @@
 <template>
-  <footer class="fixed-footer w-full fixed bottom-16 left-8">
-    <p class="footNote absolute origin-left transform -rotate-90 left-4 opacity-40 px-8 text-xs">MADE BY SAUL VERDE / GREENSLASH</p>
+  <footer class="fixed-footer w-18 fixed bottom-16 left-8">
+    <p class="footNote absolute w-56 origin-left transform -rotate-90 left-4 opacity-40 px-8 text-xs">MADE BY SAUL VERDE / GREENSLASH</p>
     <ul class="footer-links w-8">
       <li v-for="(item, index) in footerLinks" :key="index">
         <a :href="item.link" :aria-label="item.name">
