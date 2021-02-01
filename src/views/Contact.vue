@@ -1,16 +1,47 @@
 <template>
-  <div class="col-start-2 col-span-5">
-    <h1 class="text-3xl h-12">This is contact template</h1>
-    <p class="max-w-xl">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+  <div>
+    <div
+      class="wrapper-view "
+      v-for="(intro, index) in contact"
+      :key="index"
+    >
+      <div class="col-span-3">
+        <h1 class="text-5xl h-12 bold mb-8">{{ intro.title }}</h1>
+        <p v-for="(p, index) in intro.content" :key="index" class="max-w-xl">
+          {{ p.text }}
+        </p>
+      </div>
+      <div class="col-span-3 mt-10">
+        <a
+          v-for="(button, index) in intro.buttons"
+          :key="index"
+          class="btn-green mr-7 cursor-pointer"
+          :href="button.url"
+          target="_blank"
+          >{{ button.text }}</a
+        >
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+import dataContact from "../content/contact";
+
 export default {
-name:'Contact'
-}
+  name: "Contact",
+  props: {
+    dataContact: Object,
+  },
+  setup() {
+    const contact = dataContact;
+    return { contact };
+  },
+};
 </script>
 
-<style>
-
+<style scoped>
+.wrapper-view {
+  @apply flex grid w-auto grid-cols-3 ml-64 mr-32 pl-6;
+}
 </style>

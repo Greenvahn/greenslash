@@ -6,7 +6,7 @@
     ],
     "buttons": [
       {
-        "text": "SAY HELLO",
+        "text": "GET IN TOUCH",
         "url": "mailto:email@example.com"
       }
     ] 
