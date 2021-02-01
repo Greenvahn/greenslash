@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper-view max-w-full ">
     <div class="content col-span-3 space-y-4 mb-16">
-      <h1 class="text-3xl h-12">Some of the projects I've built</h1>
+      <h1 class="text-5xl h-12 bold mb-8">Some of the projects I've built</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
         nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
