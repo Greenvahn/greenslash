@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Get In Touch",
+    "content": [
+      { "text": "My inbox is always open to suggestion and new exploring paths. Whether you have a question or just want to say hi, I'll try my best to get back to you!" }
+    ],
+    "buttons": [
+      {
+        "text": "SAY HELLO",
+        "url": "mailto:email@example.com"
+      }
+    ] 
+  }
+]
