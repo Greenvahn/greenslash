@@ -1,16 +1,36 @@
 <template>
-  <div class="col-start-2 col-span-5">
-    <h1 class="text-3xl h-12">404</h1>
-    <p class="max-w-xl">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+  <div>
+    <div
+      class="wrapper-view "
+      v-for="(item, index) in notFound"
+      :key="index"
+    >
+      <div class="col-span-3">
+        <h1 class="text-5xl h-12 bold mb-8">{{ item.title }}</h1>
+        <p v-for="(p, index) in item.content" :key="index" class="max-w-xl">
+          {{ p.text }}
+        </p>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+import data404 from "../content/404";
 export default {
-name:'NotFound'
-}
+  name: "NotFound",
+  props: {
+    data404: Object,
+  },
+  setup() {
+    const notFound = data404;
+    return { notFound };
+  },
+};
 </script>
 
-<style>
-
+<style scoped>
+.wrapper-view {
+  @apply flex grid w-auto grid-cols-3 ml-64 mr-32 pl-6;
+}
 </style>
