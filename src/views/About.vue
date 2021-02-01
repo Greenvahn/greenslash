@@ -1,14 +1,13 @@
 <template>
   <div class="wrapper-view max-w-3xl ">
+    <div class="col-span-3">
+      <h1 class="text-5xl h-12 bold mb-8">About me</h1>
+    </div>
     <img
       :src="require('../assets/Testimonials.png')"
       class="inline-block col-span-1"
     />
     <div class="content col-span-2 space-y-4">
-      <h1 class="text-3xl h-12">About me</h1>
-      <p>
-        Hello! I'm Saul, front-end developer based in Lodon, UK.
-      </p>
       <p>
         I like to build products for the internet with great user interfaces and
         performant experiences. I’m strong team player who truly believes on
@@ -19,8 +18,6 @@
         programming languages. I also playing handball and running for a few
         years now. Love technology, videogames and cinema.
       </p>
-    </div>
-    <div class="content col-span-2 mt-6 space-y-4">
       <p>Here are few technologies I’ve been working with recently:</p>
       <ul>
         <li>Javascript (ES6+)</li>
