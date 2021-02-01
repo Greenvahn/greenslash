@@ -1,0 +1,28 @@
+[
+  {
+    "title": "About me",
+    "img": "Testimonials.png",
+    "content": [
+      {
+        "text":
+          "I like to build products for the internet with great user interfaces and performant experiences. I’m strong team player who truly believes on collaborative work, always eager to explore new paths."
+      },
+      {
+        "text":
+          "In my spare time I create small web applications while learning new programming languages. I also playing handball and running for a few years now. Love technology, videogames and cinema."
+      },
+      {
+        "text": "Here are few technologies I’ve been working with recently:"
+      },
+      {
+        "ul": [
+          { "li": "Javascript (ES6+)" },
+          { "li": "Vue" },
+          { "li": "React" },
+          { "li": "HTML & (S)CSS" },
+          { "li": "Node.js" }
+        ]
+      }
+    ]
+  }
+]
