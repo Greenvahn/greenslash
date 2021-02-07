@@ -1,0 +1,15 @@
+{
+  "home":
+    {
+      "title": "I create cool stuff for the web.",
+      "content": { 
+        "p0": "Hello! I’m Saul, Software Engineer based in London, UK. I'm strong team player who truly believes on collaborative work, always eager to explore new paths and build things for the web with intuitive user interfaces.",
+        "p1": "Second phrase"
+      },
+      "buttons":
+        {
+          "text": "GET IN TOUCH",
+          "url": "mailto:email@example.com"
+        }
+    }
+}

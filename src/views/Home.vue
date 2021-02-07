@@ -2,13 +2,13 @@
   <div>
     <div
       class="wrapper-view "
-      v-for="(intro, index) in introduction"
+      v-for="(intro, index) in dataHome"
       :key="index"
     >
       <div class="col-span-3">
-        <h1 class="text-5xl h-12 bold mb-8">{{ intro.title }}</h1>
+        <h1 class="text-5xl h-12 bold mb-8">{{ t('home.title') }}</h1>
         <p v-for="(p, index) in intro.content" :key="index" class="max-w-xl">
-          {{ p.text }}
+          {{ t(`home.content.p${index}`)}}
         </p>
       </div>
       <div class="col-span-3 mt-10">
@@ -18,7 +18,7 @@
           class="btn-green mr-7 cursor-pointer"
           :href="button.url"
           target="_blank"
-          >{{ button.text }}</a
+          >{{ t('home.buttons.text')}}</a
         >
       </div>
     </div>
@@ -27,15 +27,13 @@
 
 <script>
 import dataHome from "../content/home";
+import {useI18n} from 'vue-i18n'
 
 export default {
   name: "Home",
-  props: {
-    dataHome: Object,
-  },
   setup() {
-    const introduction = dataHome;
-    return { introduction };
+    const {t, locale} = useI18n();
+    return { dataHome, t, locale };
   },
 };
 </script>

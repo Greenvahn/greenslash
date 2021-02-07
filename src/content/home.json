@@ -1,13 +1,14 @@
 [
   {
-    "title": "I create cool stuff for the web.",
+    "title": "Home title placeholder",
     "content": [
-      { "text": "Hello! I’m Saul, Software Engineer based in London, UK. I'm strong team player who truly believes on collaborative work, always eager to explore new paths and build things for the web with intuitive user interfaces." }
+      { "text": "Lorem ipsum" },
+      { "text": "Lorem ipsum" }
     ],
     "buttons": [
       {
-        "text": "GET IN TOUCH",
-        "url": "mailto:email@example.com"
+        "text": "placeholder button",
+        "url": "placeholder URL"
       }
     ] 
   }
