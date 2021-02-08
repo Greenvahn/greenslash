@@ -16,6 +16,7 @@ module.exports = {
       red: colors.red,
       yellow: colors.yellow,
       black: colors.black,
+      gray: colors.gray,
       slashgreen: {
         DEFAULT: '#21D896',
         x100: '#D9E3E0',

@@ -7,11 +7,6 @@
             <IconLink :name="icon.name" :width="icon.w" :height="icon.h" :style="icon.style" />
           </a>
         </div>
-        <!-- <div class="link mx-2 w-auto">
-          <a href="#" target="_blank" class="w-auto">
-            <IconLink name="openLink" :width="25" :height="25" />
-          </a>
-        </div> -->
       </div>
 
       <img :src="require(`../assets/${card.img}`)" />
@@ -47,10 +42,7 @@ export default {
   },
   components: {
     IconLink,
-  },
-  setup(props) {
-    console.log("props", props.card);
-  },
+  }
 };
 </script>
 

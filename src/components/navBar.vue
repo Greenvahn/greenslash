@@ -14,8 +14,9 @@
           </div>
           <NavLinks :links="navItems" />
         </div>
-        <div class="grid-cols-4">
-          <a class="btn-green mr-7 cursor-pointer" href="saulverde_cv_2021.pdf" target="_blank">RESUME</a>
+        <div class="flex items-right grid-cols-12">
+          <a class="btn-green cursor-pointer" href="saulverde_cv_2021.pdf" target="_blank">RESUME</a>
+          <LangSwitcher class="ml-7 mr-7"/>
         </div>
       </div>
     </div>
@@ -24,24 +25,26 @@
 
 <script>
 import NavLinks from "./navLinks";
+import LangSwitcher from "./langSwitcher"
 import { useRouter } from "vue-router";
 
 export default {
   name: "NavBar",
   components: {
     NavLinks,
+    LangSwitcher
   },
   setup() {
     const router = useRouter();
     const navItems = [
-      { name: "HOME", path: "/", id: "HOME" },
-      { name: "ABOUT", path: "/ABOUT", id: "ABOUT" },
-      { name: "WORK", path: "/WORK", id: "WORK" },
-      { name: "CONTACT", path: "/CONTACT", id: "CONTACT" },
+      { path: "home"},
+      { path: "about"},
+      { path: "work"},
+      { path: "contact"},
     ];
 
     const redirect = () => {
-      router.push({ name: "HOME" });
+      router.push({ name: "home" });
     };
 
     return { navItems, redirect };

@@ -1,0 +1,23 @@
+{
+  "navBar": {
+    "navItems": {
+      "home": "HOME",
+      "about": "SOBRE MI",
+      "work": "PROYECTOS",
+      "contact": "CONTACTO"
+    }
+  },
+  "home":
+    {
+      "title": "Creo cosas muy guays para la web",
+      "content": { 
+        "p0": "Hola! Soy Saul, Ingeniero the software con base en Londres, Reino Unido. Me considero una pieza importante para cualquier equipo y creo en el trabajo en equipo. Siempre dispuesto para explorar nuevas vias y construir toda variedad de productos para la web.",
+        "p1": "Segunda frase" 
+      },
+      "buttons":
+        {
+          "text": "Ponte en contacto",
+          "url": "mailto:email@example.com"
+        }
+    }
+}

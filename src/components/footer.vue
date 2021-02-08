@@ -3,10 +3,8 @@
     <p class="footNote absolute w-56 origin-left transform -rotate-90 left-4 opacity-40 px-8 text-xs">MADE BY SAUL VERDE / GREENSLASH</p>
     <ul class="footer-links w-8">
       <li v-for="(item, index) in footerLinks" :key="index">
-        <a :href="item.link" :aria-label="item.name">
-          <a :href="item.link" target="_blank" class="w-auto">
-            <IconLink :name="item.name" :width="item.w" :height="item.h" :style="item.style" />
-          </a>
+        <a :href="item.link" :aria-label="item.name" target="_blank" class="w-auto">
+          <IconLink :name="item.name" :width="item.w" :height="item.h" :style="item.style" />
         </a>
       </li>
     </ul>
