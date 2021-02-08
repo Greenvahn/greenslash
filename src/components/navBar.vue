@@ -46,7 +46,7 @@ export default {
     ];
 
     const redirect = () => {
-      router.push({ name: "HOME" });
+      router.push({ name: "home" });
     };
 
     return { navItems, redirect };
