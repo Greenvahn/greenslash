@@ -14,7 +14,10 @@
           </div>
           <NavLinks :links="navItems" />
         </div>
-        <div class="grid-cols-4">
+        <div class="grid-cols-2">
+          <LangSwitcher />
+        </div>
+        <div class="grid-cols-2">
           <a class="btn-green mr-7 cursor-pointer" href="saulverde_cv_2021.pdf" target="_blank">RESUME</a>
         </div>
       </div>
@@ -24,12 +27,14 @@
 
 <script>
 import NavLinks from "./navLinks";
+import LangSwitcher from "./langSwitcher"
 import { useRouter } from "vue-router";
 
 export default {
   name: "NavBar",
   components: {
     NavLinks,
+    LangSwitcher
   },
   setup() {
     const router = useRouter();

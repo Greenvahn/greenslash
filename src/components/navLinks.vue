@@ -5,7 +5,7 @@
       :key="index"
       :to="{ name: item.name, params: { id: item.id} }"
       class="link-green"
-      >{{ item.name }}
+      >{{ t(`navBar.navItems.${index}`) }}
       <!-- <TitlePath :active="isActive" :id="item.id"/> -->
     </router-link>
   </div>
@@ -16,6 +16,7 @@
 
 <script>
 import TitlePath from "./../views/titlePath";
+import {useI18n} from 'vue-i18n';
 export default {
   name: "NavLinks",
   components: {
@@ -23,6 +24,10 @@ export default {
   },
   props: {
     links: Object,
+  },
+  setup() {
+    const {t} = useI18n();
+    return {t}
   }
 };
 </script>

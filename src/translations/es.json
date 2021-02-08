@@ -1,4 +1,12 @@
 {
+  "navBar": {
+    "navItems": {
+      "0": "HOME",
+      "1": "SOBRE MI",
+      "2": "PROYECTOS",
+      "3": "CONTACTO"
+    }
+  },
   "home":
     {
       "title": "Creo cosas muy guays para la web",

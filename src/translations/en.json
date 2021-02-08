@@ -1,4 +1,12 @@
 {
+  "navBar": {
+    "navItems": {
+      "0": "HOME",
+      "1": "ABOUT",
+      "2": "WORK",
+      "3": "CONTACT"
+    }
+  },
   "home":
     {
       "title": "I create cool stuff for the web.",
