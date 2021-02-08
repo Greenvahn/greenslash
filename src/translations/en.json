@@ -1,10 +1,10 @@
 {
   "navBar": {
     "navItems": {
-      "0": "HOME",
-      "1": "ABOUT",
-      "2": "WORK",
-      "3": "CONTACT"
+      "home": "HOME",
+      "about": "ABOUT",
+      "work": "WORK",
+      "contact": "CONTACT"
     }
   },
   "home":

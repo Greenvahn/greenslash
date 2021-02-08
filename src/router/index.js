@@ -20,25 +20,25 @@ const routes = [
     children: [
       {
         path: "",
-        name: "HOME",
+        name: "home",
         component: Home,
         props: true,
       },
       {
         path: "about",
-        name: "ABOUT",
+        name: "about",
         component: About,
         props: true,
       },
       {
         path: "work",
-        name: "WORK",
+        name: "work",
         component: Work,
         props: true,
       },
       {
         path: "contact",
-        name: "CONTACT",
+        name: "contact",
         component: Contact,
         props: true,
       },

@@ -5,7 +5,7 @@
       :key="index"
       :to="`${item.path === 'home'? `/${$i18n.locale}`:`/${$i18n.locale}/${item.path}` }`"
       class="link-green"
-      >{{ t(`navBar.navItems.${index}`) }}
+      >{{ t(`navBar.navItems.${item.path}`) }}
       <!-- <TitlePath :active="isActive" :id="item.id"/> -->
     </router-link>
   </div>
