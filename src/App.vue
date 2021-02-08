@@ -1,11 +1,7 @@
 <template>
   <NavBar />
   <Content>
-    <router-view v-slot="{ Component }">
-      <transition name="slide-fade" mode="out-in">
-        <component :is="Component"/>
-      </transition>
-    </router-view>
+    <RouterRender />
   </Content>
   <Footer />
 </template>
@@ -14,6 +10,7 @@
 import NavBar from "./components/navBar";
 import Content from "./components/mainContent";
 import Footer from "./components/footer";
+import RouterRender from "./components/routerRender";
 
 export default {
   name: "App",
@@ -21,6 +18,7 @@ export default {
     NavBar,
     Content,
     Footer,
+    RouterRender,
   },
 };
 </script>

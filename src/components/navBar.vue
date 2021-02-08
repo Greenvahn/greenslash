@@ -39,10 +39,10 @@ export default {
   setup() {
     const router = useRouter();
     const navItems = [
-      { name: "HOME", path: "/", id: "HOME" },
-      { name: "ABOUT", path: "/ABOUT", id: "ABOUT" },
-      { name: "WORK", path: "/WORK", id: "WORK" },
-      { name: "CONTACT", path: "/CONTACT", id: "CONTACT" },
+      { path: "home"},
+      { path: "about"},
+      { path: "work"},
+      { path: "contact"},
     ];
 
     const redirect = () => {
