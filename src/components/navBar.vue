@@ -14,11 +14,9 @@
           </div>
           <NavLinks :links="navItems" />
         </div>
-        <div class="grid-cols-2">
-          <LangSwitcher />
-        </div>
-        <div class="grid-cols-2">
-          <a class="btn-green mr-7 cursor-pointer" href="saulverde_cv_2021.pdf" target="_blank">RESUME</a>
+        <div class="flex items-right grid-cols-12">
+          <a class="btn-green cursor-pointer" href="saulverde_cv_2021.pdf" target="_blank">RESUME</a>
+          <LangSwitcher class="ml-7 mr-7"/>
         </div>
       </div>
     </div>
