@@ -11,7 +11,7 @@ import i18n from '../i18n'
 const routes = [
   {
     path: '/',
-    redirect: `/${i18n.locale}`
+    redirect: `/${i18n.locale ? i18n.locale : 'en'}` // If NOT i18.local defined => set to english
   },
   {
     path: "/:lang",
