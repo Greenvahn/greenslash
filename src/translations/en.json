@@ -1,4 +1,8 @@
 {
+  "lang": {
+    "EN": "English (EN)",
+    "ES": "Spanish (ES)"
+  },
   "navBar": {
     "navItems": {
       "home": "HOME",

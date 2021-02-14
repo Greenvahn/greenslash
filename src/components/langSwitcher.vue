@@ -5,17 +5,15 @@
       v-model="$i18n.locale"
       @change="updateRouteParams($event)"
     >
-      <option value="en">
-        <span class="flag_en"></span>
-        EN
-      </option>
-      <option value="es">ES</option>
+      <option value="en">{{ t('lang.EN')}}</option>
+      <option value="es">{{ t('lang.ES')}}</option>
     </select>
   </div>
 </template>
 
 <script>
 import { useRouter } from "vue-router";
+import {useI18n} from 'vue-i18n'
 
 export default {
   name: "langSwitcher",
@@ -26,7 +24,8 @@ export default {
         params: { lang: event.target.value },
       });
     };
-    return { updateRouteParams };
+    const {t} = useI18n();
+    return { updateRouteParams, t };
   },
 };
 </script>
@@ -43,6 +42,13 @@ export default {
     background-repeat: no-repeat;
     background-size: 1.5em 1.5em;
     appearance: none;
+    &.select-lang {
+      option .flag_en {
+        width: 10px;
+        height: 10px;
+        background: red;
+      }
+    }
   }
 }
 </style>
