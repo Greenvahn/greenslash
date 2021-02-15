@@ -1,24 +1,34 @@
 <template>
-  <nav class="bg-white bg-opacity-0">
-    <div class="mx-auto sm:px-6 lg:px-6 lg:py-8">
-      <div class="flex items-center justify-between h-32">
-        <div class="flex items-center grid-cols-12">
-          <IconLink name="grslash" :viewBox="'0 0 100 73.23'" :width="125" :height="125" :style="'icon-pulse grid-cols-3'"  @click="redirect" />
-          <NavLinks :links="navItems" />
-        </div>
-        <div class="flex items-right grid-cols-12">
-          <a class="btn-green cursor-pointer" href="saulverde_cv_2021.pdf" target="_blank">RESUME</a>
-          <LangSwitcher class="ml-7 mr-7"/>
-        </div>
-      </div>
+  <header
+    class="flex flex-row justify-start space-x-2 bg-white py-6 px-6 h-32 w-full"
+  >
+    <IconLink
+      name="grslash"
+      :viewBox="'0 0 100 73.23'"
+      :width="125"
+      :height="125"
+      :style="'icon-pulse flex-none h-32 -mt-4'"
+      @click="redirect"
+    />
+    <nav class="flex flex-row justify-start flex-grow gap-x-4 w-96">
+      <NavLinks :links="navItems" />
+    </nav>
+    <div id="resources" class="flex flex-row justify-end h-10">
+      <LangSwitcher class="ml-7 mr-7" />
+      <a
+        class="btn-green cursor-pointer text-sm h-9 leading-5"
+        href="saulverde_cv_2021.pdf"
+        target="_blank"
+        >Resume</a
+      >
     </div>
-  </nav>
+  </header>
 </template>
 
 <script>
 import NavLinks from "./navLinks";
-import IconLink from "./iconDisplay"
-import LangSwitcher from "./langSwitcher"
+import IconLink from "./iconDisplay";
+import LangSwitcher from "./langSwitcher";
 import { useRouter } from "vue-router";
 
 export default {
@@ -26,15 +36,15 @@ export default {
   components: {
     NavLinks,
     LangSwitcher,
-    IconLink
+    IconLink,
   },
   setup() {
     const router = useRouter();
     const navItems = [
-      { path: "home"},
-      { path: "about"},
-      { path: "work"},
-      { path: "contact"},
+      { path: "home" },
+      { path: "about" },
+      { path: "work" },
+      { path: "contact" },
     ];
 
     const redirect = () => {

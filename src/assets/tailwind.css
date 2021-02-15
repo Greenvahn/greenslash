@@ -28,9 +28,9 @@
     @apply bg-white bg-opacity-0 flex flex-col px-3 font-medium hover:text-slashgreen focus:text-slashgreen
   }
   .title-path {
-    @apply bg-white bg-opacity-0 px-5 py-2 text-neutral-100 text-5xl font-museomoderno font-bold flex items-center
+    @apply bg-white bg-opacity-0 text-neutral-100 text-5xl font-museomoderno font-bold flex items-center
   }
   .select-lang {
-    @apply p-2 pr-6 cursor-pointer block w-32 border border-gray-100 hover:border-slashgreen focus:ring-1 focus:ring-slashgreen 
+    @apply py-2 px-2 pr-6 cursor-pointer block w-32 text-sm border border-gray-100 hover:border-slashgreen focus:ring-1 focus:ring-slashgreen 
   }
 }

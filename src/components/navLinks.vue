@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-auto grid-cols-1">
+  <div class="h-24 w-28">
     <router-link
       v-for="(item, index) in links"
       :key="index"
@@ -9,7 +9,7 @@
       <!-- <TitlePath :active="isActive" :id="item.id"/> -->
     </router-link>
   </div>
-  <div class="flex-auto grid-cols-8">
+  <div class="h-24 w-3/4">
     <TitlePath />
   </div>
 </template>
