@@ -1,5 +1,5 @@
 <template>
-  <main id="content" class="mx-auto max-w-full">
+  <main id="content" class="mx-auto max-w-full relative mt-48 z-0">
     <div class="content-wrap">
       <slot></slot>
     </div>
@@ -14,6 +14,6 @@ export default {
 
 <style lang="scss" scoped>
   .content-wrap {
-    @apply flex items-center h-auto min-h-full mt-8
+    @apply flex items-center h-auto min-h-full mt-8;
   }
 </style>

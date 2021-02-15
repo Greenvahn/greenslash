@@ -1,6 +1,6 @@
 <template>
   <header
-    class="flex flex-row justify-between w-full items-start bg-white relative py-2 px-2 h-26 md:space-x-4 md:justify-between md:h-32 m:py-6 md:px-6 lg:p-6"
+    class="fixed z-10 flex flex-row justify-between w-full items-start bg-white py-2 px-2 h-26 md:space-x-4 md:justify-between md:h-32 m:py-6 md:px-6 lg:p-6"
   >
     <IconLink
       name="grslash"
@@ -24,7 +24,7 @@
         >Resume</a
       >
     </div>
-    <MenuAside v-show="mobileMenuOpen" :active="mobileMenuOpen" />
+    <MenuAside v-show="mobileMenuOpen"  :active="mobileMenuOpen" />
   </header>
 </template>
 
@@ -66,7 +66,6 @@ export default {
       mobileMenuOpen.value = !mobileMenuOpen.value
       context.emit('switcher')
     };
-
     return { navItems, redirect, mobileMenuOpen, menuModal };
   },
 };

@@ -1,9 +1,11 @@
 <template>
-  <NavBar @switcher="modalOn = !modalOn" />
-  <Content :blur="modalOn">
+<div class="h-screen w-full fixed" :blur="modalOn">
+  <NavBar @switcher="modalOn = !modalOn" :isModalOn="modalOn"/>
+  <Content>
     <RouterRender />
   </Content>
-  <Footer :blur="modalOn" />
+  <Footer />
+</div>
 </template>
 
 <script>

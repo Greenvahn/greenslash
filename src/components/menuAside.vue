@@ -60,7 +60,6 @@ export default {
   outline: 0px;
   background-color: black;
   box-shadow: -10px 0px 30px -15px black;
-  z-index: 9;
   visibility: visible;
 
   .navlinks-wrap a {
