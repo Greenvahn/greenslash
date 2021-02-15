@@ -33,10 +33,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.icon-pulse {
+.main-logo {
   cursor: pointer;
   svg {
+    width: 100%;
+    height: 100%;
+    max-width: 112px;
+    margin-right: 0px;
     transition: all 0.8s ease-in;
+    @media (min-width: 768px) {
+      width: 80%;
+    }
+    @media (min-width: 1024px) {
+      width: 100%;
+    }
   }
   &:hover {
     svg {

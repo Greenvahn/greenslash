@@ -6,10 +6,9 @@
       :to="`${item.path === 'home'? `/${$i18n.locale}`:`/${$i18n.locale}/${item.path}` }`"
       class="link-green"
       >{{ t(`navBar.navItems.${item.path}`) }}
-      <!-- <TitlePath :active="isActive" :id="item.id"/> -->
     </router-link>
   </div>
-  <div class="h-24 w-3/4">
+  <div class="hidden h-24 lg:block">
     <TitlePath />
   </div>
 </template>

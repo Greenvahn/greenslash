@@ -24,4 +24,7 @@ export default {
 </script>
 
 <style src="./assets/tailwind.css"></style>
-<style>@import "./assets/transitions.css";</style>
+<style>
+@import "./assets/utils.css";
+@import "./assets/transitions.css";
+</style>
