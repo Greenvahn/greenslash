@@ -4,7 +4,7 @@
       xmlns="http://www.w3.org/2000/svg"
       :width="width"
       :height="height"
-      viewBox="0 0 25 25"
+      :viewBox="`${viewBox ? viewBox : '0 0 25 25'}`"
       v-html="iconHTML"
     ></svg>
   </div>
@@ -20,6 +20,7 @@ export default {
     width: Number,
     height: Number,
     style: String,
+    viewBox: String,
   },
   setup(props) {
     const iconLoader = () => {
@@ -32,6 +33,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.icon-pulse {
+  cursor: pointer;
+  svg {
+    transition: all 0.8s ease-in;
+  }
+
+  &:hover {
+    opacity: 1;
+    svg {
+      opacity: 1;
+      fill: #21d896;
+    }
+  }
+}
+
 .icon-filled {
   opacity: 0.5;
   svg path {
