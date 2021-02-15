@@ -8,7 +8,10 @@
       :style="'main-logo flex-none p-2 w-1/4 h-22 lg:h-32 lg:-mt-4 lg:w-32'"
       @click="redirect"
     />
-    <MenuMobileBtn class="lg:hidden" />
+    <MenuMobileBtn
+      @click="menuModal"
+      class="lg:hidden z-10"
+    />
     <nav class="flex flex-row justify-start flex-grow h-24 w-96 hidden lg:flex">
       <NavLinks :links="navItems" />
     </nav>
@@ -21,6 +24,7 @@
         >Resume</a
       >
     </div>
+    <MenuAside v-show="mobileMenuOpen" :active="mobileMenuOpen" />
   </header>
 </template>
 
@@ -29,17 +33,21 @@ import NavLinks from "./navLinks";
 import IconLink from "./iconDisplay";
 import LangSwitcher from "./langSwitcher";
 import MenuMobileBtn from "./menuMobileBtn";
+import MenuAside from "./menuAside";
 import { useRouter } from "vue-router";
+import { ref} from "vue";
 
 export default {
   name: "NavBar",
+  emits: ["switcher"],
   components: {
     NavLinks,
     LangSwitcher,
     IconLink,
     MenuMobileBtn,
+    MenuAside,
   },
-  setup() {
+  setup(props, context) {
     const router = useRouter();
     const navItems = [
       { path: "home" },
@@ -52,7 +60,14 @@ export default {
       router.push({ name: "home" });
     };
 
-    return { navItems, redirect };
+    let mobileMenuOpen = ref(false);
+
+    const menuModal = () => {
+      mobileMenuOpen.value = !mobileMenuOpen.value
+      context.emit('switcher')
+    };
+
+    return { navItems, redirect, mobileMenuOpen, menuModal };
   },
 };
 </script>

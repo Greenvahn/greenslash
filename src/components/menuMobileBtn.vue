@@ -1,6 +1,5 @@
 <template>
   <button
-    @click="mobileMenuOpen = !mobileMenuOpen"
     class="flex self-center w-8 h-8 mr-6 bg-gray-200 text-gray-600 p-1"
   >
     <svg

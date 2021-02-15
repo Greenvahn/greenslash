@@ -13,8 +13,7 @@
 
 <script>
 import { useRouter } from "vue-router";
-import {useI18n} from 'vue-i18n'
-
+import {useI18n} from 'vue-i18n';
 export default {
   name: "langSwitcher",
   setup() {

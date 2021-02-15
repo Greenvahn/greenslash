@@ -1,9 +1,9 @@
 <template>
-  <NavBar />
-  <Content>
+  <NavBar @switcher="modalOn = !modalOn" />
+  <Content :blur="modalOn">
     <RouterRender />
   </Content>
-  <Footer />
+  <Footer :blur="modalOn" />
 </template>
 
 <script>
@@ -11,6 +11,7 @@ import NavBar from "./components/navBar";
 import Content from "./components/mainContent";
 import Footer from "./components/footer";
 import RouterRender from "./components/routerRender";
+import { ref } from 'vue';
 
 export default {
   name: "App",
@@ -20,6 +21,10 @@ export default {
     Footer,
     RouterRender,
   },
+  setup() {
+    let modalOn = ref(false);
+    return { modalOn}
+  }
 };
 </script>
 

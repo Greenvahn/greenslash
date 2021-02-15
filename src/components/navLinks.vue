@@ -1,5 +1,5 @@
 <template>
-  <div class="h-24 w-28">
+  <div class="navlinks-wrap">
     <router-link
       v-for="(item, index) in links"
       :key="index"
