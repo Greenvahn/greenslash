@@ -38,11 +38,8 @@ export default {
   svg {
     transition: all 0.8s ease-in;
   }
-
   &:hover {
-    opacity: 1;
     svg {
-      opacity: 1;
       fill: #21d896;
     }
   }
