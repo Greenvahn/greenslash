@@ -3,13 +3,6 @@
     <div class="mx-auto sm:px-6 lg:px-6 lg:py-8">
       <div class="flex items-center justify-between h-32">
         <div class="flex items-center grid-cols-12">
-            <!-- <img
-              src="./../assets/Logo.svg"
-              alt="logo"
-              width="125"
-              class="main-logo mr-4 cursor-pointer"
-              @click="redirect"
-            /> -->
           <IconLink name="grslash" :viewBox="'0 0 100 73.23'" :width="125" :height="125" :style="'icon-pulse grid-cols-3'"  @click="redirect" />
           <NavLinks :links="navItems" />
         </div>
