@@ -1,16 +1,16 @@
 <template>
   <header
-    class="fixed z-10 flex flex-row justify-between w-full items-start bg-white py-2 px-2 h-26 md:space-x-4 md:justify-between md:h-32 m:py-6 md:px-6 lg:p-6"
+    class="fixed z-10 flex flex-row justify-between w-full items-start bg-white py-2 px-2 h-26 md:justify-between md:h-32 m:py-6 md:px-6 lg:p-6"
   >
     <IconLink
       name="grslash"
       :viewBox="'0 0 100 73.23'"
-      :style="'main-logo flex-none p-2 w-1/4 h-22 lg:h-32 lg:-mt-4 lg:w-32'"
+      :style="'main-logo flex-none p-2 w-1/4 h-22 lg:h-32 lg:-mt-4 lg:w-32 z-30'"
       @click="redirect"
     />
     <MenuMobileBtn
       @click="menuModal"
-      class="lg:hidden z-10"
+      class="lg:hidden z-30"
     />
     <nav class="flex flex-row justify-start flex-grow h-24 w-96 hidden lg:flex">
       <NavLinks :links="navItems" />
@@ -24,7 +24,10 @@
         >Resume</a
       >
     </div>
-    <MenuAside v-show="mobileMenuOpen"  :active="mobileMenuOpen" />
+    <MenuAside v-show="mobileMenuOpen"  :active="mobileMenuOpen" class="z-20" />
+  <transition name="slide-blur">
+  <div v-show="mobileMenuOpen" class="overlay-blur lg:hidden" aria-hidden="true"></div>
+  </transition>
   </header>
 </template>
 

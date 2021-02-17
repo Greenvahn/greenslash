@@ -1,11 +1,9 @@
 <template>
-<div class="h-screen w-full fixed" :blur="modalOn">
-  <NavBar @switcher="modalOn = !modalOn" :isModalOn="modalOn"/>
-  <Content>
+  <NavBar @switcher="modalOn = !modalOn" :isModalOn="modalOn" />
+  <Content :class="{'overflow-hidden': modalOn}">
     <RouterRender />
   </Content>
   <Footer />
-</div>
 </template>
 
 <script>
@@ -13,7 +11,7 @@ import NavBar from "./components/navBar";
 import Content from "./components/mainContent";
 import Footer from "./components/footer";
 import RouterRender from "./components/routerRender";
-import { ref } from 'vue';
+import { ref } from "vue";
 
 export default {
   name: "App",
@@ -25,8 +23,8 @@ export default {
   },
   setup() {
     let modalOn = ref(false);
-    return { modalOn}
-  }
+    return { modalOn };
+  },
 };
 </script>
 

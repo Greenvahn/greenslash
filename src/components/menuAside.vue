@@ -1,20 +1,22 @@
 <template>
-  <aside
-    :aria-hidden="active"
-    :tabindex="`${active ? 1 : 0}`"
-    class="menu-side lg:hidden"
-  >
-    <LangSwitcher class="mb-16" />
-    <NavLinks :links="navItems" />
-    <div class="mt-16">
-      <a
-        class="btn-green cursor-pointer tex-sm"
-        href="saulverde_cv_2021.pdf"
-        target="_blank"
-        >Resume</a
-      >
-    </div>
-  </aside>
+  <transition name="slide-menu">
+    <aside
+      :aria-hidden="active"
+      :tabindex="`${active ? 1 : 0}`"
+      class="menu-side lg:hidden"
+    >
+      <LangSwitcher class="mb-16" />
+      <NavLinks :links="navItems" />
+      <div class="mt-16">
+        <a
+          class="btn-green cursor-pointer tex-sm"
+          href="saulverde_cv_2021.pdf"
+          target="_blank"
+          >Resume</a
+        >
+      </div>
+    </aside>
+  </transition>
 </template>
 
 <script>
@@ -66,11 +68,11 @@ export default {
     margin: 10px 0;
     color: white;
     &:hover {
-      color: #21D896;
+      color: #21d896;
     }
   }
   .btn-green {
-    color: #21D896;
+    color: #21d896;
   }
 
   .locale-switcher select {

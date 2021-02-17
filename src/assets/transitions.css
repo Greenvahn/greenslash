@@ -1,4 +1,6 @@
 /* Transitions */
+
+/* Normal page */
 .slide-fade-enter-active, .slide-fade-leave-active {
   transition: all 0.3s ease-out;
 }
@@ -10,5 +12,50 @@
 .slide-fade-enter-from,
 .slide-fade-leave-to {
   transform: translateX(-50px);
+  opacity: 0;
+}
+
+/* Menu-aside */
+.slide-menu-enter-active, .slide-menu-leave-active {
+  transition: all 0.2s ease-out;
+}
+
+.slide-menu-enter-active {
+  transition-delay: 0.1s;
+}
+
+.slide-menu-enter-from,
+.slide-menu-leave-to {
+  transform: translateX(50px);
+  opacity: 0;
+}
+
+/* overlay-blur */
+.overlay-blur {
+  position: absolute;
+  height: 100vh;
+  margin: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  background:black;
+  background:rgba(0,0,0,0.8);
+
+  backdrop-filter: blur(6px);
+}
+
+
+.slide-blur-enter-active, .slide-blur-leave-active {
+  transition: all 0.2s ease-in;
+}
+
+.slide-blur-enter-active {
+  transition-delay: 0.1s;
+}
+
+.slide-blur-enter-from,
+.slide-blur-leave-to {
   opacity: 0;
 }
