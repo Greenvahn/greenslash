@@ -26,7 +26,7 @@
     </div>
     <MenuAside v-show="mobileMenuOpen"  :active="mobileMenuOpen" class="z-20" />
   <transition name="slide-blur">
-  <div v-show="mobileMenuOpen" class="overlay-blur lg:hidden" aria-hidden="true"></div>
+    <div v-show="mobileMenuOpen" class="overlay-blur lg:hidden" aria-hidden="true" @click="menuModal"></div>
   </transition>
   </header>
 </template>
