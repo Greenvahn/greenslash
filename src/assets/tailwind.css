@@ -25,7 +25,7 @@
   /* NAV BAR */
   /*=======================*/
   .link-green {
-    @apply bg-white bg-opacity-0 flex flex-col px-3 font-medium hover:text-slashgreen focus:text-slashgreen
+    @apply bg-white bg-opacity-0 flex flex-col px-3 font-medium hover:text-slashgreen focus:text-slashgreen 
   }
   .title-path {
     @apply block bg-white bg-opacity-0 text-neutral-100 text-5xl font-museomoderno font-bold flex items-center
