@@ -6,8 +6,8 @@
       :key="index"
     >
       <div class="col-span-3">
-        <h1 class="text-5xl h-12 bold mb-8">{{ t('home.title') }}</h1>
-        <p v-for="(p, index) in intro.content" :key="index" class="max-w-xl">
+        <h1 class="h1-title">{{ t('home.title') }}</h1>
+        <p v-for="(p, index) in intro.content" :key="index" class="p-text">
           {{ t(`home.content.p${index}`)}}
         </p>
       </div>
