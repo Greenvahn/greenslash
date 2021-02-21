@@ -84,4 +84,23 @@ export default {
     }
   }
 }
+
+.icon-menu {
+  &:hover {
+    svg {
+      fill: #21d896;
+    }
+  }
+}
+
+.icon-menu-close {
+  svg {
+    fill: white;
+  }
+  &:hover {
+    svg {
+      fill: #21d896;
+    }
+  }
+}
 </style>

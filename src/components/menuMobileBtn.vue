@@ -1,23 +1,19 @@
 <template>
-  <button
-    class="flex self-center w-8 h-8 mr-6 bg-gray-200 text-gray-600 p-1"
-  >
-    <svg
-      fill="currentColor"
-      viewBox="0 0 20 20"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        fill-rule="evenodd"
-        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-        clip-rule="evenodd"
-      ></path>
-    </svg>
+  <button class="flex self-center mr-6 focus:outline-none">
+    <IconLink v-show="!active" name="menu" width="60" height="60" class="icon-menu" />
+    <IconLink v-show="active" name="menuClose" width="60" height="60" class="icon-menu-close" />
   </button>
 </template>
 
 <script>
+import IconLink from "./iconDisplay";
 export default {
   name: "MenuMobile",
+  components: {
+    IconLink
+  },
+  props: {
+    active: Boolean
+  }
 };
 </script>

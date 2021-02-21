@@ -10,6 +10,7 @@
     />
     <MenuMobileBtn
       @click="menuModal"
+      :active="mobileMenuOpen"
       class="lg:hidden z-30"
     />
     <nav class="flex flex-row justify-start flex-grow h-24 w-96 hidden lg:flex">
@@ -38,7 +39,7 @@ import LangSwitcher from "./langSwitcher";
 import MenuMobileBtn from "./menuMobileBtn";
 import MenuAside from "./menuAside";
 import { useRouter } from "vue-router";
-import { ref} from "vue";
+import { ref } from "vue";
 
 export default {
   name: "NavBar",
