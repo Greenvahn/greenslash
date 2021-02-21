@@ -37,6 +37,6 @@
   /* Grid */
   /* ======================= */
   .content-wrap {
-    @apply grid m-auto grid-cols-3 items-center h-auto min-h-full max-w-screen-lg;
+    @apply grid grid-cols-3 items-center h-auto min-h-full max-w-sm px-6 m-auto md:max-w-screen-md lg:ml-64;
   }
 }

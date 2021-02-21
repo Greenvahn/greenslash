@@ -1,11 +1,11 @@
 <template>
   <div>
     <div
-      class="wrapper-view"
+      class="content-wrap"
       v-for="(item, index) in notFound"
       :key="index"
     >
-      <div class="">
+      <div class="col-span-3">
         <h1 class="text-5xl h-12 bold mb-8">{{ item.title }}</h1>
         <p v-for="(p, index) in item.content" :key="index" class="max-w-xl">
           {{ p.text }}
@@ -28,5 +28,3 @@ export default {
   },
 };
 </script>
-
-<style scoped></style>
