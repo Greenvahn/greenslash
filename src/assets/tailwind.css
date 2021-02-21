@@ -33,4 +33,10 @@
   .select-lang {
     @apply py-2 px-2 pr-6 cursor-pointer block w-32 text-sm border border-gray-100 hover:border-slashgreen focus:ring-1 focus:ring-slashgreen 
   }
+
+  /* Grid */
+  /* ======================= */
+  .content-wrap {
+    @apply grid m-auto grid-cols-3 items-center h-auto min-h-full max-w-screen-lg;
+  }
 }

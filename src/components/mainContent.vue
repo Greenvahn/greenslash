@@ -1,8 +1,8 @@
 <template>
   <main id="content" class="mx-auto max-w-full relative mt-48 z-0 min-h-300">
-    <div class="content-wrap">
+    <!-- <div class="content-wrap"> -->
       <slot></slot>
-    </div>
+    <!-- </div> -->
   </main>
 </template>
 
@@ -13,7 +13,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .content-wrap {
-    @apply flex items-center h-auto min-h-full ;
-  }
+  // .content-wrap {
+  //   @apply flex grid grid-cols-3 items-center h-auto min-h-full;
+  // }
 </style>

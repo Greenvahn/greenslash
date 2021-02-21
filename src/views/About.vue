@@ -3,7 +3,7 @@
     <div
       v-for="(item, index) in about"
       :key="index"
-      class="wrapper-view max-w-3xl"
+      class="content-wrap"
     >
       <div class="col-span-3">
         <h1 class="text-5xl h-12 bold mb-8">{{ item.title }}</h1>
@@ -40,8 +40,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.wrapper-view {
-  @apply flex grid w-auto grid-cols-3 gap-2 ml-64 mr-32 pl-6;
-}
-</style>
+<style scoped></style>

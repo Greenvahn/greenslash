@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="wrapper-view "
+      class="content-wrap"
       v-for="(intro, index) in dataHome"
       :key="index"
     >
@@ -38,8 +38,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.wrapper-view {
-  @apply flex grid w-auto grid-cols-3 ml-64 mr-32 pl-6;
-}
-</style>
+<style scoped></style>

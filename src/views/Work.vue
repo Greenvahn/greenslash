@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper-view max-w-full ">
+  <div class="content-wrap">
     <div class="content col-span-3 space-y-4 mb-16">
       <h1 class="text-5xl h-12 bold mb-8">Some of the projects I've built</h1>
       <p>
@@ -33,10 +33,6 @@ export default {
 </script>
 
 <style lang="scss">
-.wrapper-view {
-  @apply flex grid w-auto grid-cols-3 gap-4 ml-64 pl-6;
-}
-
 .project-card {
   transition: margin-top 0.2s ease-in;
   &:hover {

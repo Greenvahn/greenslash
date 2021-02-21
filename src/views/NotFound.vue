@@ -1,11 +1,11 @@
 <template>
   <div>
     <div
-      class="wrapper-view "
+      class="wrapper-view"
       v-for="(item, index) in notFound"
       :key="index"
     >
-      <div class="col-span-3">
+      <div class="">
         <h1 class="text-5xl h-12 bold mb-8">{{ item.title }}</h1>
         <p v-for="(p, index) in item.content" :key="index" class="max-w-xl">
           {{ p.text }}
@@ -29,8 +29,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.wrapper-view {
-  @apply flex grid w-auto grid-cols-3 ml-64 mr-32 pl-6;
-}
-</style>
+<style scoped></style>
