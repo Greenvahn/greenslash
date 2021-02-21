@@ -1,5 +1,5 @@
 <template>
-  <h1 class="title-path" v-if="$route.name">
+  <h1 class="title-path h-24" v-if="$route.name">
     <img src="./../assets/codeArrow.svg" width="110" class="mr-4 opacity-50" />
     <!-- <span>{{ $route.name }}</span> -->
     <span>{{ t(`navBar.navItems.${String($route.name)}`) }}</span>

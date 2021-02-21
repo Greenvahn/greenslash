@@ -1,15 +1,14 @@
 <template>
-  <div class="flex-auto grid-cols-1">
+  <div class="navlinks-wrap">
     <router-link
       v-for="(item, index) in links"
       :key="index"
       :to="`${item.path === 'home'? `/${$i18n.locale}`:`/${$i18n.locale}/${item.path}` }`"
       class="link-green"
       >{{ t(`navBar.navItems.${item.path}`) }}
-      <!-- <TitlePath :active="isActive" :id="item.id"/> -->
     </router-link>
   </div>
-  <div class="flex-auto grid-cols-8">
+  <div class="hidden h-24 lg:block">
     <TitlePath />
   </div>
 </template>
