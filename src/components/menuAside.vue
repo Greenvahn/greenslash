@@ -60,6 +60,7 @@ export default {
   padding: 150px 10px;
   width: min(75vw, 400px);
   height: 100vh;
+  overflow: auto;
   outline: 0px;
   background-color: black;
   box-shadow: -10px 0px 30px -15px black;
