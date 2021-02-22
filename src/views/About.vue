@@ -8,19 +8,19 @@
       <div class="col-span-3">
         <h1 class="h1-title">{{ item.title }}</h1>
       </div>
-
+      <div class="flex justify-right self-start col-span-3 md:col-span-1">
       <!-- Mobile picture -->
       <img
         :src="require(`../assets/${item.img_sm}`)"
-        class="inline-block col-span-3 mb-6 md:hidden"
+        class="inline-block w-full mb-6 md:hidden"
       />
 
       <!-- Desktop picture-->
       <img
         :src="require(`../assets/${item.img_lg}`)"
-        class="hidden col-span-1 mb-6 md:inline-block"
+        class="hidden w-full pr-6 py-2 md:inline-block"
       />
-      
+      </div>
       <div class="content col-span-3 md:col-span-2">
         <div v-for="(para, index) in item.content" :key="index">
           <p v-if="para.text" class="p-text">{{ para.text }}</p>

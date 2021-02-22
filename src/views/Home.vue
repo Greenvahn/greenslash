@@ -15,9 +15,10 @@
         <a
           v-for="(button, index) in intro.buttons"
           :key="index"
-          class="btn-green mr-7 cursor-pointer"
+          class="btn-green w-full block text-center md:w-36 lg:w-40 lg:max-w-xs"
           :href="button.url"
           target="_blank"
+          role="button"
           >{{ t('home.buttons.text')}}</a
         >
       </div>

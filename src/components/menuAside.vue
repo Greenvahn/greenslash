@@ -9,9 +9,10 @@
       <NavLinks :links="navItems" />
       <div class="mt-16">
         <a
-          class="btn-green cursor-pointer tex-sm"
+          class="btn-green tex-sm"
           href="saulverde_cv_2021.pdf"
           target="_blank"
+          role="button"
           >Resume</a
         >
       </div>
