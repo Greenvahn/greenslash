@@ -1,7 +1,7 @@
 <template>
-  <footer class="fixed-footer w-18 fixed bottom-16 left-8">
-    <p class="footNote absolute w-56 origin-left transform -rotate-90 left-4 opacity-40 px-8 text-xs">MADE BY SAUL VERDE / GREENSLASH</p>
-    <ul class="footer-links w-8">
+  <footer class="fixed-footer flex flex-col-reverse items-center absolute w-full bottom-4 md:w-18 md:block md:fixed md:bottom-16 md:left-8">
+    <p class="footNote w-full text-center transform opacity-40 px-8 text-xs md:-rotate-90 md:absolute md:origin-left md:left-4 md:w-56 md:text-left">MADE BY SAUL VERDE / GREENSLASH</p>
+    <ul class="flex flex-row footer-links justify-center w-full md:block md:w-8">
       <li v-for="(item, index) in footerLinks" :key="index">
         <a :href="item.link" :aria-label="item.name" target="_blank" class="w-auto">
           <IconLink :name="item.name" :width="item.w" :height="item.h" :style="item.style" />

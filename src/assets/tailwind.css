@@ -37,7 +37,7 @@
   /* CONTENT*/
   /* ======================= */
   .content-wrap {
-    @apply grid grid-cols-3 items-center h-auto min-h-full w-full px-6 m-auto md:px-12 lg:ml-64 lg:px-6 lg:max-w-4xl;
+    @apply grid grid-cols-3 items-center h-auto min-h-full w-full px-6 m-auto mb-32 md:px-12 md:ml-20 lg:ml-64 lg:px-6 lg:max-w-4xl;
   }
 
   .h1-title {
