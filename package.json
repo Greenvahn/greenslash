@@ -5,11 +5,13 @@
   "scripts": {
     "start": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "firebase deploy --only hosting"
   },
   "dependencies": {
     "autoprefixer": "^9.8.6",
     "core-js": "^3.6.5",
+    "firebase-tools": "^9.4.0",
     "postcss": "^7.0.35",
     "sass": "^1.32.0",
     "sass-loader": "^10.1.0",
