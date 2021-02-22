@@ -1,5 +1,5 @@
 <template>
-  <div class="project-card col-span-3 w-auto min-w-200 mb-12 sm:col-span-3 md:col-span-1 md:mr-6 lg:max-w-md">
+  <div class="project-card col-span-3 w-auto min-w-200 mb-12 sm:col-span-3 md:col-span-1 md:mr-6 lg:max-w-lg">
     <div class="-mt-10">
       <div id="links-box" class="relative flex justify-end top-10 mr-2">
         <div v-for="(icon, index) in card.icons" :key="index" class="link mx-2 w-auto">
