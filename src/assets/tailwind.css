@@ -37,11 +37,11 @@
   /* CONTENT*/
   /* ======================= */
   .content-wrap {
-    @apply grid grid-cols-3 items-center h-auto min-h-full w-full px-6 m-auto mb-32 md:px-12 md:ml-20 lg:ml-64 lg:px-6 lg:max-w-4xl;
+    @apply grid grid-cols-3 items-center min-h-full w-full px-6 m-auto mb-32 md:px-12 lg:ml-64 lg:px-6 lg:max-w-4xl;
   }
 
   .h1-title {
-    @apply text-4xl h-auto mb-6 md:text-5xl;
+    @apply text-4xl h-auto max-w-prose mb-6 sm:text-5xl md:text-5xl;
   }
   .p-text {
     @apply max-w-xl mb-4;
