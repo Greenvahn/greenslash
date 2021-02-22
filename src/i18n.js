@@ -7,10 +7,13 @@ const allowedLanguages = ['en', 'es'];
 // Retrieves the default language based on the URL
 // * If URL is not valid => sets language to english
 const languageDetector = () => {
-  let URL_lang = window.location.pathname;
-  URL_lang = URL_lang.match(/\/([^/]+)/); // Regex to capture the characters after the first slash
   let i18lang = 'en';
-  allowedLanguages.includes(URL_lang[1]) ? i18lang = URL_lang[1].toString() : i18lang;
+  let URL_lang = window.location.pathname;
+  // If window URL is NOT on the root
+  if(URL_lang !== '/') {
+    URL_lang = URL_lang.match(/\/([^/]+)/); // Regex to capture the characters after the first slash
+    allowedLanguages.includes(URL_lang[1]) ? i18lang = URL_lang[1].toString() : i18lang;
+  }
   return i18lang;
 }
 
