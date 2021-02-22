@@ -3,18 +3,27 @@
     <div
       v-for="(item, index) in about"
       :key="index"
-      class="wrapper-view max-w-3xl"
+      class="content-wrap"
     >
       <div class="col-span-3">
-        <h1 class="text-5xl h-12 bold mb-8">{{ item.title }}</h1>
+        <h1 class="h1-title">{{ item.title }}</h1>
       </div>
+      <div class="flex justify-right self-start col-span-3 md:col-span-1">
+      <!-- Mobile picture -->
       <img
-        :src="require(`../assets/${item.img}`)"
-        class="inline-block col-span-1"
+        :src="require(`../assets/${item.img_sm}`)"
+        class="inline-block w-full mb-6 md:hidden"
       />
-      <div class="content col-span-2 space-y-4">
+
+      <!-- Desktop picture-->
+      <img
+        :src="require(`../assets/${item.img_lg}`)"
+        class="hidden w-full pr-6 py-2 md:inline-block"
+      />
+      </div>
+      <div class="content col-span-3 md:col-span-2">
         <div v-for="(para, index) in item.content" :key="index">
-          <p v-if="para.text">{{ para.text }}</p>
+          <p v-if="para.text" class="p-text">{{ para.text }}</p>
           <ul v-if="para.ul">
             <li v-for="(bullet, index) in para.ul" :key="index">
               {{ bullet.li }}
@@ -39,9 +48,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.wrapper-view {
-  @apply flex grid w-auto grid-cols-3 gap-2 ml-64 mr-32 pl-6;
-}
-</style>

@@ -1,12 +1,12 @@
 <template>
   <div>
     <div
-      class="wrapper-view "
+      class="content-wrap"
       v-for="(intro, index) in contact"
       :key="index"
     >
       <div class="col-span-3">
-        <h1 class="text-5xl h-12 bold mb-8">{{ intro.title }}</h1>
+        <h1 class="h1-title">{{ intro.title }}</h1>
         <p v-for="(p, index) in intro.content" :key="index" class="max-w-xl">
           {{ p.text }}
         </p>
@@ -15,9 +15,10 @@
         <a
           v-for="(button, index) in intro.buttons"
           :key="index"
-          class="btn-green mr-7 cursor-pointer"
+          class="btn-green w-full block text-center md:w-36 lg:w-40 lg:max-w-xs"
           :href="button.url"
           target="_blank"
+          role="button"
           >{{ button.text }}</a
         >
       </div>
@@ -39,9 +40,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.wrapper-view {
-  @apply flex grid w-auto grid-cols-3 ml-64 mr-32 pl-6;
-}
-</style>

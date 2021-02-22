@@ -1,7 +1,8 @@
 [
   {
     "title": "About me",
-    "img": "Testimonials.png",
+    "img_lg": "img_lg.png",
+    "img_sm": "img_sm.png",
     "content": [
       {
         "text":

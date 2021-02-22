@@ -19,9 +19,10 @@
     <div id="resources" class="flex flex-row justify-end h-10 hidden lg:flex">
       <LangSwitcher class="ml-7 mr-7" />
       <a
-        class="btn-green cursor-pointer text-sm h-9 leading-5"
+        class="btn-green text-sm h-9 leading-5"
         href="saulverde_cv_2021.pdf"
         target="_blank"
+        role="button"
         >Resume</a
       >
     </div>
