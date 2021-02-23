@@ -66,11 +66,17 @@ export default {
     };
 
     let mobileMenuOpen = ref(false);
-
+  
     const menuModal = () => {
       mobileMenuOpen.value = !mobileMenuOpen.value
       context.emit('switcher')
     };
+
+    // Close menu aside after route has been chosen
+    router.afterEach(() => {
+      mobileMenuOpen.value = false
+    });
+
     return { navItems, redirect, mobileMenuOpen, menuModal };
   },
 };
