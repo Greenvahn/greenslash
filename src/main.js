@@ -19,4 +19,5 @@ router.beforeEach((to, from, next) => {
 
 app.use(i18n);
 app.use(router);
+app.config.globalProperties.colorMode = 'light'; // Color mode - theme
 app.mount("#app");

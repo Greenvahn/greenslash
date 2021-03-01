@@ -1,6 +1,6 @@
 <template>
   <NavBar @switcher="modalOn = !modalOn" :isModalOn="modalOn" />
-  <Content :class="{'overflow-hidden': modalOn}">
+  <Content class="bg-white dark:bg-black" :class="{'overflow-hidden': modalOn}">
     <RouterRender />
   </Content>
   <Footer />
@@ -20,6 +20,11 @@ export default {
     Content,
     Footer,
     RouterRender,
+  },
+  mounted() {
+    // Stores color mode as local item  --> 'theme'
+    //* Color mode is defined by default in main.js
+    localStorage.setItem('theme', this.colorMode);
   },
   setup() {
     let modalOn = ref(false);
