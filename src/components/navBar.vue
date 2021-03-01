@@ -4,8 +4,8 @@
   >
     <IconLink
       name="grslash"
-      :viewBox="'0 0 100 73.23'"
-      :style="'main-logo flex-none p-2 w-1/4 h-22 lg:h-32 lg:-mt-4 lg:w-32 z-30'"
+      :viewBox="'0 0 77.63 73.23'"
+      :style="'main-logo flex-none p-2 w-20 h-22 md:w-28 lg:h-32 lg:-mt-4 lg:w-32 z-30'"
       @click="redirect"
     />
     <MenuMobileBtn
