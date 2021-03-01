@@ -40,14 +40,8 @@ export default {
     background-position: right .5rem center;
     background-repeat: no-repeat;
     background-size: 1.5em 1.5em;
+    background-color: transparent;
     appearance: none;
-    &.select-lang {
-      option .flag_en {
-        width: 10px;
-        height: 10px;
-        background: red;
-      }
-    }
   }
 }
 </style>
