@@ -12,7 +12,8 @@ export default {
   name: "titlePath",
   setup(){
     const {t} = useI18n();
-    return {t}
+    const currentTheme = localStorage.getItem("theme");
+    return {t, currentTheme }
   }
 };
 </script>

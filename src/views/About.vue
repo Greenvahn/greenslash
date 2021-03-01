@@ -3,7 +3,7 @@
     <div
       v-for="(item, index) in about"
       :key="index"
-      class="content-wrap"
+      class="content-wrap lg:max-w-2xl"
     >
       <div class="col-span-3">
         <h1 class="h1-title">{{ item.title }}</h1>

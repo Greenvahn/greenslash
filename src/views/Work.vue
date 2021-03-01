@@ -1,5 +1,5 @@
 <template>
-  <div class="content-wrap">
+  <div class="content-wrap lg:max-w-4xl">
     <div class="content col-span-3 space-y-4 mb-16">
       <h1 class="h1-title">Some of the projects I've built</h1>
       <p>

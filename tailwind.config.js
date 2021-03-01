@@ -47,5 +47,9 @@ module.exports = {
       '300': '300px',
      }
   },
-  variants: {},
+  variants: {
+    extend: {
+      textOpacity: ['dark']
+    }
+  },
 }

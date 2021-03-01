@@ -1,6 +1,9 @@
 <template>
   <NavBar @switcher="modalOn = !modalOn" :isModalOn="modalOn" />
-  <Content class="bg-white dark:bg-black" :class="{'overflow-hidden': modalOn}">
+  <Content
+    class="bg-white dark:bg-black"
+    :class="{ 'overflow-hidden': modalOn }"
+  >
     <RouterRender />
   </Content>
   <Footer />
@@ -11,6 +14,7 @@ import NavBar from "./components/navBar";
 import Content from "./components/mainContent";
 import Footer from "./components/footer";
 import RouterRender from "./components/routerRender";
+import accessiblity from "./accessiblity";
 import { ref } from "vue";
 
 export default {
@@ -24,7 +28,10 @@ export default {
   mounted() {
     // Stores color mode as local item  --> 'theme'
     //* Color mode is defined by default in main.js
-    localStorage.setItem('theme', this.colorMode);
+    localStorage.setItem("theme", this.colorMode);
+
+    // Inits accessible listeners
+    accessiblity();
   },
   setup() {
     let modalOn = ref(false);

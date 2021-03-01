@@ -1,6 +1,6 @@
 <template>
   <header
-    class="fixed z-10 flex flex-row justify-between w-full items-start bg-white py-2 px-2 h-26 md:justify-between md:h-32 m:py-6 md:px-6 lg:p-6"
+    class="fixed z-10 flex flex-row justify-between w-full items-start bg-white py-2 px-2 h-26 md:justify-between md:h-32 m:py-6 md:px-6 lg:p-6 dark:bg-black"
   >
     <IconLink
       name="grslash"
@@ -17,7 +17,6 @@
       <NavLinks :links="navItems" />
     </nav>
     <div id="resources" class="flex flex-row justify-end h-10 hidden lg:flex">
-      <ThemeSwitcher />
       <LangSwitcher class="ml-7 mr-7" />
       <a
         class="btn-green text-sm h-9 leading-5"
@@ -26,6 +25,7 @@
         role="button"
         >Resume</a
       >
+      <ThemeSwitcher />
     </div>
     <MenuAside v-show="mobileMenuOpen" :active="mobileMenuOpen" class="z-20" />
     <transition name="slide-blur">

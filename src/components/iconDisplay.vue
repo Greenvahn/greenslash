@@ -6,6 +6,7 @@
       :height="height"
       :viewBox="`${viewBox ? viewBox : '0 0 25 25'}`"
       v-html="iconHTML"
+      focusable="false"
     ></svg>
   </div>
 </template>
@@ -100,6 +101,34 @@ export default {
   &:hover {
     svg {
       fill: #21d896;
+    }
+  }
+}
+
+.icon-darkmode {
+  opacity: 0.2;
+  -webkit-transition: .4s;
+  transition: .4s;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+
+/* Dark modes */
+.dark {
+  .icon-darkmode {
+    opacity: 0.5;
+    svg {
+      fill: #21d896;
+    }
+    &:hover {
+      opacity: 1;
     }
   }
 }

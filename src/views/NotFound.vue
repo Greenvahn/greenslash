@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="content-wrap"
+      class="content-wrap lg:max-w-2xl"
       v-for="(item, index) in notFound"
       :key="index"
     >
