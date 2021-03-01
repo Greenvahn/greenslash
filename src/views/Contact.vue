@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="content-wrap lg:max-w-2xl"
+      class="content-wrap"
       v-for="(intro, index) in contact"
       :key="index"
     >
