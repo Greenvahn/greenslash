@@ -1,7 +1,8 @@
 <template>
   <form>
     <div @click="colorSwitcher" class="switch" role="button" aria-checked="false" aria-label="Toggle dark mode" tabindex="0">
-      <IconDisplay name="colorMode" :width="Number(35)" :height="Number(34)" class="icon-darkmode" />
+      <IconDisplay name="colorMode" :width="Number(35)" :height="Number(34)" class="icon-darkmode" /> 
+      <span v-if="text">Dark mode</span>
     </div>
   </form>
 </template>
@@ -9,6 +10,9 @@
 import IconDisplay from "./iconDisplay";
 export default {
   name: "themeSwitcher",
+  props: {
+    text: Boolean
+  },
   components: {
     IconDisplay
   },
@@ -46,9 +50,65 @@ export default {
   justify-content: center;
   align-items: center;
   width: auto;
+  text-align: center;
   cursor: pointer;
   padding: 0 5px;
   margin-left: 5px;
-  height: 36px;
+
+  .icon-darkmode {
+    svg {
+      opacity: 0.2;
+    }
+  }
+
+  &:hover {
+    svg {
+      opacity: 1;
+    }
+  }
 }
+
+.menu-side .switch {
+  padding: 0;
+  margin-left: 0;
+  opacity: 0.5;
+
+  .icon-darkmode {
+    svg {
+      opacity: 0.8;
+      fill: white;
+    }
+  }
+
+  span {
+    color: white;
+    padding-left: 5px;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.dark .switch {
+  .icon-darkmode {
+    svg {
+       fill: #21d896;
+    }
+  }
+}
+
+.dark .menu-side .switch {
+  .icon-darkmode {
+    svg {
+      opacity: 0.8;
+      fill: #21d896;
+    }
+  }
+  span {
+    color: #21d896;
+  }
+}
+
+
 </style>

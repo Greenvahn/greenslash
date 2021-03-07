@@ -34,6 +34,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+/* Light modes - normal modes
+============================ */
+
+/* Main logo */
 .main-logo {
   cursor: pointer;
   svg {
@@ -56,6 +60,7 @@ export default {
   }
 }
 
+/* Generic class - adds fill to SVGs */
 .icon-filled {
   opacity: 0.5;
   svg path {
@@ -70,6 +75,7 @@ export default {
   }
 }
 
+/* Generic class - creates outlined SVGs */
 .icon-outlined {
   opacity: 0.5;
   svg {
@@ -86,6 +92,7 @@ export default {
   }
 }
 
+/* Hamburguer menu icon */
 .icon-menu {
   &:hover {
     svg {
@@ -94,6 +101,7 @@ export default {
   }
 }
 
+/* Hamburguer menu - close icon */
 .icon-menu-close {
   svg {
     fill: white;
@@ -105,36 +113,15 @@ export default {
   }
 }
 
-.icon-darkmode {
-  opacity: 0.2;
-  -webkit-transition: .4s;
-  transition: .4s;
 
-  &:hover {
-    opacity: 1;
-  }
+/* Dark modes
+============================ */
 
-  &:focus {
-    outline: none;
-  }
-}
-
-
-/* Dark modes */
 .dark {
-  .icon-darkmode {
-    opacity: 0.5;
-    svg {
-      fill: #21d896;
-    }
-    &:hover {
-      opacity: 1;
-    }
-  }
-
+  /* Main logo */
   .main-logo {
     svg {
-      fill: #FFF
+      fill: #fff;
     }
     &:hover {
       svg {
@@ -143,15 +130,17 @@ export default {
     }
   }
 
+  /* Arrow icon - router path*/
   .arrow-route {
     svg {
-      fill: #FFF
+      fill: #fff;
     }
   }
 
+  /* Hamburguer menu*/
   .icon-menu {
     svg {
-      fill: #FFF;
+      fill: #fff;
     }
     &:hover {
       svg {
