@@ -2,7 +2,7 @@
   <div class="content-wrap">
     <div class="content col-span-3 space-y-4 mb-16">
       <h1 class="h1-title">Some of the projects I've built</h1>
-      <p>
+      <p class="dark:text-white">
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
         nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
         volutpat.

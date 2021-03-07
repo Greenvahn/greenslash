@@ -131,5 +131,33 @@ export default {
       opacity: 1;
     }
   }
+
+  .main-logo {
+    svg {
+      fill: #FFF
+    }
+    &:hover {
+      svg {
+        fill: #21d896;
+      }
+    }
+  }
+
+  .arrow-route {
+    svg {
+      fill: #FFF
+    }
+  }
+
+  .icon-menu {
+    svg {
+      fill: #FFF;
+    }
+    &:hover {
+      svg {
+        fill: #21d896;
+      }
+    }
+  }
 }
 </style>

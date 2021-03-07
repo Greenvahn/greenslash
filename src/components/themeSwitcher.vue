@@ -1,6 +1,6 @@
 <template>
   <form>
-    <div @click="colorSwitcher" class="switch" role="button" aria-checked="false" aria-label="Toggle dark mode" title="Toggle dark mode" tabindex="0">
+    <div @click="colorSwitcher" class="switch" role="button" aria-checked="false" aria-label="Toggle dark mode" tabindex="0">
       <IconDisplay name="colorMode" :width="Number(35)" :height="Number(34)" class="icon-darkmode" />
     </div>
   </form>

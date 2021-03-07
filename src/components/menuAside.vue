@@ -89,4 +89,8 @@ export default {
     }
   }
 }
+
+.dark .menu-side {
+  border-left: 1px solid rgba($color: #FFF, $alpha: 0.2);
+}
 </style>

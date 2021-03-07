@@ -7,7 +7,7 @@
     >
       <div class="col-span-3">
         <h1 class="h1-title">{{ intro.title }}</h1>
-        <p v-for="(p, index) in intro.content" :key="index" class="max-w-xl">
+        <p v-for="(p, index) in intro.content" :key="index" class="max-w-xl dark:text-white">
           {{ p.text }}
         </p>
       </div>
