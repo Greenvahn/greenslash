@@ -2,12 +2,13 @@
   <form>
     <div @click="colorSwitcher" class="switch" role="button" aria-checked="false" aria-label="Toggle dark mode" tabindex="0">
       <IconDisplay name="colorMode" :width="Number(35)" :height="Number(34)" class="icon-darkmode" /> 
-      <span v-if="text">Dark mode</span>
+      <span v-if="text">{{ t(`theme`) }}</span>
     </div>
   </form>
 </template>
 <script>
 import IconDisplay from "./iconDisplay";
+import {useI18n} from 'vue-i18n';
 export default {
   name: "themeSwitcher",
   props: {
@@ -36,7 +37,9 @@ export default {
       }
     };
 
-    return { colorSwitcher }
+    const {t} = useI18n();
+
+    return { colorSwitcher, t }
   },
 };
 </script>
