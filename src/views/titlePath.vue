@@ -18,7 +18,6 @@ export default {
   setup(){
     const {t} = useI18n();
     const currentTheme = localStorage.getItem("theme");
-    console.log("currentTheme", currentTheme)
     return {t, currentTheme }
   }
 };

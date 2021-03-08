@@ -31,7 +31,7 @@
 
 <script>
 import dataContact from "../content/contact";
-import {useI18n} from 'vue-i18n'
+import {useI18n} from 'vue-i18n';
 
 export default {
   name: "Contact",

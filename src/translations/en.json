@@ -36,23 +36,39 @@
     }
   },
   "work": {
-    "w01":   {
-      "id": "Work01",
-      "title": "THIS IS THE PROJECT TILE",
-      "content": {
-        "p0": "Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna."
-      },
-      "frameworks": {
-        "name0": "Node",
-        "name1": "Express",
-        "name2": "Firebase",
-        "name3": "Vue"
-      },
-      "icons": {
-        "icon0" : { "name": "githubFull", "w": 24, "h": 24, "style": "icon-filled" },
-        "icon1" : { "name": "openLink", "w": 25, "h": 25, "style": "icon-filled" }
-      },
-      "img": "work-img-sample.jpg"
+    "title": "Some of the projects I've built",
+    "content": {
+      "p0": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam"
+    },
+    "cards": {
+      "w0": {
+        "id": "Work01",
+        "title": "THIS IS THE PROJECT TILE",
+        "content": {
+          "p0": "Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna."
+        },
+        "frameworks": {
+          "name0": "Node",
+          "name1": "Express",
+          "name2": "Firebase",
+          "name3": "Vue"
+        },
+        "icons": {
+          "icon0": {
+            "name": "githubFull",
+            "w": 24,
+            "h": 24,
+            "style": "icon-filled"
+          },
+          "icon1": {
+            "name": "openLink",
+            "w": 25,
+            "h": 25,
+            "style": "icon-filled"
+          }
+        },
+        "img": "work-img-sample.jpg"
+      }
     }
   }
 }
