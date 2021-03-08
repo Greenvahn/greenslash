@@ -132,5 +132,22 @@
       },
       "img": "work-img-sample.jpg"
     }
+  },
+  "about": {
+      "title": "About me",
+      "img_lg": "img_lg.png",
+      "img_sm": "img_sm.png",
+      "content": {
+          "p0": "I like to build products for the internet with great user interfaces and performant experiences. I’m strong team player who truly believes on collaborative work, always eager to explore new paths.",
+          "p1": "In my spare time I create small web applications while learning new programming languages. I also playing handball and running for a few years now. Love technology, videogames and cinema.",
+          "p2": "Here are few technologies I’ve been working with recently:",
+          "ul": {
+            "li0": "Javascript (ES6+)",
+            "li1": "Vue",
+            "li2": "React",
+            "li3": "HTML & (S)CSS",
+            "li4": "Node.js"
+          }
+     }
   }
 }

@@ -24,13 +24,13 @@
     }
   },
   "contact": {
-    "title": "Get In Touch",
+    "title": "Ponte en contacto",
     "content": {
-      "p0": "My inbox is always open to suggestion and new exploring paths. Whether you have a question or just want to say hi, I'll try my best to get back to you!"
+      "p0": "Mi e-mail siempre esta abierto a propuestas y nuevos proyectos."
     },
     "buttons": {
       "btn0": {
-        "text": "SAY HELLO",
+        "text": "HOLA!",
         "url": "mailto:email@example.com"
       }
     }
@@ -132,5 +132,22 @@
       },
       "img": "work-img-sample.jpg"
     }
+  },
+  "about": {
+      "title": "Sobre mi",
+      "img_lg": "img_lg.png",
+      "img_sm": "img_sm.png",
+      "content": {
+          "p0": "Me gusta construir productos para internet con buenas interfaces que generen una buea eperiencia en el usuario ademas de un buen rendimiento.",
+          "p1": "En mi tiempo libre creo pequenas aplicaciones web mientras aprendo nuevos lenguajes de programción y consolido conocimentos. También soy una persona muy activa: juego al balónmano y me gusta el running. Amo la tecnologia, videojuegos y el cine.",
+          "p2": "Aqui dejo algunas de las técnologias que he estado usando últimamente",
+          "ul": {
+            "li0": "Javascript (ES6+)",
+            "li1": "Vue",
+            "li2": "React",
+            "li3": "HTML & (S)CSS",
+            "li4": "Node.js"
+          }
+     }
   }
 }
