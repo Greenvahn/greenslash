@@ -148,5 +148,19 @@ export default {
       }
     }
   }
+
+
+/* Generic class - creates outlined SVGs */
+.icon-outlined {
+  svg {
+    stroke: #FFF;
+  }
+  &:hover {
+    svg {
+      opacity: 1;
+      stroke: #21d896;
+    }
+  }
+}
 }
 </style>
