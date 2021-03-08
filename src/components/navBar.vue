@@ -1,6 +1,6 @@
 <template>
   <header
-    class="fixed z-10 flex flex-row justify-between w-full items-start bg-white py-2 px-2 h-26 md:justify-between md:h-32 m:py-6 md:px-6 lg:p-6"
+    class="fixed z-10 flex flex-row justify-between w-full items-start bg-white py-2 px-2 h-26 md:justify-between md:h-32 m:py-6 md:px-6 lg:p-6 dark:bg-black"
   >
     <IconLink
       name="grslash"
@@ -25,11 +25,17 @@
         role="button"
         >Resume</a
       >
+      <ThemeSwitcher />
     </div>
-    <MenuAside v-show="mobileMenuOpen"  :active="mobileMenuOpen" class="z-20" />
-  <transition name="slide-blur">
-    <div v-show="mobileMenuOpen" class="overlay-blur lg:hidden" aria-hidden="true" @click="menuModal"></div>
-  </transition>
+    <MenuAside v-show="mobileMenuOpen" :active="mobileMenuOpen" class="z-20" />
+    <transition name="slide-blur">
+      <div
+        v-show="mobileMenuOpen"
+        class="overlay-blur lg:hidden"
+        aria-hidden="true"
+        @click="menuModal"
+      ></div>
+    </transition>
   </header>
 </template>
 
@@ -37,6 +43,7 @@
 import NavLinks from "./navLinks";
 import IconLink from "./iconDisplay";
 import LangSwitcher from "./langSwitcher";
+import ThemeSwitcher from "./themeSwitcher";
 import MenuMobileBtn from "./menuMobileBtn";
 import MenuAside from "./menuAside";
 import { useRouter } from "vue-router";
@@ -48,9 +55,15 @@ export default {
   components: {
     NavLinks,
     LangSwitcher,
+    ThemeSwitcher,
     IconLink,
     MenuMobileBtn,
     MenuAside,
+  },
+  mounted() {
+    // const colorMode = this.colorMode;
+    // console.log("0---", colorMode)
+    // return {colorMode}
   },
   setup(props, context) {
     const router = useRouter();
@@ -66,15 +79,15 @@ export default {
     };
 
     let mobileMenuOpen = ref(false);
-  
+
     const menuModal = () => {
-      mobileMenuOpen.value = !mobileMenuOpen.value
-      context.emit('switcher')
+      mobileMenuOpen.value = !mobileMenuOpen.value;
+      context.emit("switcher");
     };
 
     // Close menu aside after route has been chosen
     router.afterEach(() => {
-      mobileMenuOpen.value = false
+      mobileMenuOpen.value = false;
     });
 
     return { navItems, redirect, mobileMenuOpen, menuModal };

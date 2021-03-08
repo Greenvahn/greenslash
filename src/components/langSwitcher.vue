@@ -1,12 +1,12 @@
 <template>
   <div class="locale-switcher">
     <select
-      class="select-lang"
+      class="select-lang dark:text-white"
       v-model="$i18n.locale"
       @change="updateRouteParams($event)"
     >
-      <option value="en">{{ t('lang.EN')}}</option>
-      <option value="es">{{ t('lang.ES')}}</option>
+      <option value="en" class="dark:text-black">{{ t('lang.EN')}}</option>
+      <option value="es" class="dark:text-black">{{ t('lang.ES')}}</option>
     </select>
   </div>
 </template>

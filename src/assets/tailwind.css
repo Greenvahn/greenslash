@@ -19,16 +19,16 @@
    /* BUTTONS */
    /*=======================*/
   .btn-green {
-    @apply py-2 px-6 border border-slashgreen bg-white bg-opacity-0 font-opensans hover:bg-slashgreen hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+    @apply py-2 px-6 border border-slashgreen bg-white bg-opacity-0 font-opensans hover:bg-slashgreen hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 dark:text-white;
   }
 
   /* NAV BAR */
   /*=======================*/
   .link-green {
-    @apply bg-white bg-opacity-0 flex flex-col px-3 font-medium hover:text-slashgreen focus:text-slashgreen 
+    @apply bg-white bg-opacity-0 flex flex-col px-3 font-medium hover:text-slashgreen focus:text-slashgreen dark:text-white 
   }
   .title-path {
-    @apply block bg-white bg-opacity-0 text-neutral-100 text-5xl font-museomoderno font-bold flex items-center
+    @apply block bg-white bg-opacity-0 text-black text-opacity-5 text-5xl font-museomoderno font-bold flex items-center dark:text-opacity-10 dark:text-white
   }
   .select-lang {
     @apply py-2 px-2 pr-6 cursor-pointer block w-32 text-sm border border-gray-100 hover:border-slashgreen focus:ring-1 focus:ring-slashgreen 
@@ -37,13 +37,13 @@
   /* CONTENT*/
   /* ======================= */
   .content-wrap {
-    @apply grid grid-cols-3 items-center min-h-full w-full px-6 m-auto mb-32 md:px-12 lg:ml-64 lg:px-6 lg:max-w-4xl;
+    @apply grid grid-cols-3 items-center min-h-full w-full px-6 m-auto mb-32 md:px-12 lg:ml-64 lg:px-6 lg:max-w-screen-lg;
   }
 
   .h1-title {
-    @apply text-4xl h-auto max-w-prose mb-6 sm:text-5xl md:text-5xl;
+    @apply text-4xl h-auto max-w-prose mb-6 sm:text-5xl md:text-5xl dark:text-white;
   }
   .p-text {
-    @apply max-w-xl mb-4;
+    @apply max-w-xl mb-4 dark:text-white;
   }
 }

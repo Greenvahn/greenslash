@@ -1,7 +1,16 @@
+:focus{
+  outline: none;
+}
+
 #app {
   min-height: 100vh;
   width: 100%;
   position: absolute;
+  background-color: white;
+}
+
+.dark #app {
+  background-color: black;
 }
 
 .overlay-blur {
@@ -22,4 +31,15 @@
 /* Active links */
 .router-link-exact-active {
   color: #21D896 !important;
+}
+
+
+/* Accessiblity */
+.acc .link-green:focus, 
+.acc .btn-green:focus, 
+.acc .select-lang:focus, 
+.acc .icon-darkmode:focus,
+.acc a:focus,
+.acc .switch:focus {
+  outline: 3px solid blue;
 }

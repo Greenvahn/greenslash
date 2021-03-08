@@ -1,7 +1,7 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  darkMode: 'media',
+  darkMode: 'class',
   plugins: [],
   purge: [
     './src/**/*.html',
@@ -47,5 +47,9 @@ module.exports = {
       '300': '300px',
      }
   },
-  variants: {},
+  variants: {
+    extend: {
+      textOpacity: ['dark']
+    }
+  },
 }

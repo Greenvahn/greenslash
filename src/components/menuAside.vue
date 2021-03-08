@@ -5,6 +5,7 @@
       :tabindex="`${active ? 1 : 0}`"
       class="menu-side lg:hidden"
     >
+      <ThemeSwitcher :text="true" />
       <LangSwitcher class="mb-16" />
       <NavLinks :links="navItems" />
       <div class="mt-16">
@@ -23,11 +24,13 @@
 <script>
 import NavLinks from "./navLinks";
 import LangSwitcher from "./langSwitcher";
+import ThemeSwitcher from "./themeSwitcher";
 export default {
   name: "menuAside",
   components: {
     NavLinks,
     LangSwitcher,
+    ThemeSwitcher
   },
   props: {
     active: Boolean,
@@ -88,5 +91,9 @@ export default {
       color: black;
     }
   }
+}
+
+.dark .menu-side {
+  border-left: 1px solid rgba($color: #FFF, $alpha: 0.2);
 }
 </style>

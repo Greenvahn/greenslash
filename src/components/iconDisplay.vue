@@ -6,6 +6,7 @@
       :height="height"
       :viewBox="`${viewBox ? viewBox : '0 0 25 25'}`"
       v-html="iconHTML"
+      focusable="false"
     ></svg>
   </div>
 </template>
@@ -33,6 +34,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+/* Light modes - normal modes
+============================ */
+
+/* Main logo */
 .main-logo {
   cursor: pointer;
   svg {
@@ -55,6 +60,7 @@ export default {
   }
 }
 
+/* Generic class - adds fill to SVGs */
 .icon-filled {
   opacity: 0.5;
   svg path {
@@ -69,6 +75,7 @@ export default {
   }
 }
 
+/* Generic class - creates outlined SVGs */
 .icon-outlined {
   opacity: 0.5;
   svg {
@@ -85,6 +92,7 @@ export default {
   }
 }
 
+/* Hamburguer menu icon */
 .icon-menu {
   &:hover {
     svg {
@@ -93,6 +101,7 @@ export default {
   }
 }
 
+/* Hamburguer menu - close icon */
 .icon-menu-close {
   svg {
     fill: white;
@@ -102,5 +111,56 @@ export default {
       fill: #21d896;
     }
   }
+}
+
+
+/* Dark modes
+============================ */
+
+.dark {
+  /* Main logo */
+  .main-logo {
+    svg {
+      fill: #fff;
+    }
+    &:hover {
+      svg {
+        fill: #21d896;
+      }
+    }
+  }
+
+  /* Arrow icon - router path*/
+  .arrow-route {
+    svg {
+      fill: #fff;
+    }
+  }
+
+  /* Hamburguer menu*/
+  .icon-menu {
+    svg {
+      fill: #fff;
+    }
+    &:hover {
+      svg {
+        fill: #21d896;
+      }
+    }
+  }
+
+
+/* Generic class - creates outlined SVGs */
+.icon-outlined {
+  svg {
+    stroke: #FFF;
+  }
+  &:hover {
+    svg {
+      opacity: 1;
+      stroke: #21d896;
+    }
+  }
+}
 }
 </style>
