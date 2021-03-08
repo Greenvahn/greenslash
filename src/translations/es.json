@@ -36,39 +36,101 @@
     }
   },
   "work": {
-    "title": "Algunos projectos que he realizado",
+    "title": "Algunos de mis proyectos",
     "content": {
       "p0": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam"
+    }
+  },
+  "cards": {
+    "w0": {
+      "id": "Card00",
+      "title": "PROYECTO 00",
+      "content": {
+        "p0": "Contenido del proyecto 00"
+      },
+      "frameworks": {
+        "name0": "Node",
+        "name1": "Express",
+        "name2": "Firebase",
+        "name3": "Vue"
+      },
+      "icons": {
+        "icon0": {
+          "name": "githubFull",
+          "w": 24,
+          "h": 24,
+          "style": "icon-filled",
+          "URL": "#"
+        },
+        "icon1": {
+          "name": "openLink",
+          "w": 25,
+          "h": 25,
+          "style": "icon-filled",
+          "URL": "#"
+        }
+      },
+      "img": "work-img-sample.jpg"
     },
-    "cards": {
-      "w0": {
-        "id": "Work01",
-        "title": "THIS IS THE PROJECT TILE",
-        "content": {
-          "p0": "Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna."
+    "w1": {
+      "id": "Card01",
+      "title": "PROYECTO 01",
+      "content": {
+        "p0": "Contenido del proyecto 01."
+      },
+      "frameworks": {
+        "name0": "Node",
+        "name1": "Express",
+        "name2": "Firebase",
+        "name3": "Vue"
+      },
+      "icons": {
+        "icon0": {
+          "name": "githubFull",
+          "w": 24,
+          "h": 24,
+          "style": "icon-filled",
+          "URL": "#"
         },
-        "frameworks": {
-          "name0": "Node",
-          "name1": "Express",
-          "name2": "Firebase",
-          "name3": "Vue"
+        "icon1": {
+          "name": "openLink",
+          "w": 25,
+          "h": 25,
+          "style": "icon-filled",
+          "URL": "#"
+        }
+      },
+      "img": "work-img-sample.jpg"
+    },
+    "w2": {
+      "id": "Card02",
+      "title": "PROYECTO 02",
+      "content": {
+        "p0": "Contenido del proyecto 02."
+      },
+      "frameworks": {
+        "name0": "Node",
+        "name1": "Express",
+        "name2": "Firebase",
+        "name3": "Vue"
+      },
+      "icons": {
+        "icon0": {
+          "name": "githubFull",
+          "w": 24,
+          "h": 24,
+          "style": "icon-filled",
+          "URL": "#"
         },
-        "icons": {
-          "icon0": {
-            "name": "githubFull",
-            "w": 24,
-            "h": 24,
-            "style": "icon-filled"
-          },
-          "icon1": {
-            "name": "openLink",
-            "w": 25,
-            "h": 25,
-            "style": "icon-filled"
-          }
-        },
-        "img": "work-img-sample.jpg"
-      }
+        "icon1": {
+          "name": "openLink",
+          "w": 25,
+          "h": 25,
+          "style": "icon-filled",
+          "URL": "#"
+        }
+      },
+      "img": "work-img-sample.jpg"
     }
   }
 }

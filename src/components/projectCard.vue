@@ -1,9 +1,11 @@
 <template>
-  <div class="project-card col-span-3 w-auto min-w-200 mb-12 sm:col-span-3 md:col-span-1 md:mr-6 lg:max-w-lg">
+  <div v-for="(card, cardIndex) in dataCards"
+  :key="cardIndex"
+  class="project-card col-span-3 w-auto min-w-200 mb-12 sm:col-span-3 md:col-span-1 md:mr-6 lg:max-w-lg">
     <div class="-mt-10">
       <div id="links-box" class="relative flex justify-end top-10 mr-2">
         <div v-for="(icon, index) in card.icons" :key="index" class="link mx-2 w-auto">
-          <a href="#" target="_blank" class="w-auto">
+          <a :href="icon.URL" target="_blank" class="w-auto">
             <IconLink :name="icon.name" :width="icon.w" :height="icon.h" :style="icon.style" />
           </a>
         </div>
@@ -13,9 +15,9 @@
 
       <div class="content grid grid-cols-3 gap-2 bg-black text-white">
         <div class="col-span-3 text-sm p-3">
-          <h3 class="font-bold py-2 ">{{ card.title }}</h3>
+          <h3 class="font-bold py-2 ">{{ t(`cards.w${cardIndex}.title`) }}</h3>
           <p v-for="(p, index) in card.content" :key="index">
-            {{ p.text }}
+            {{ t(`cards.w${cardIndex}.content.p${index}`) }}
           </p>
           <ul class="mt-6 font-museomoderno space-x-4">
             <li
@@ -34,6 +36,8 @@
 
 <script>
 import IconLink from "../components/iconDisplay";
+import dataCards from "../content/cards";
+import {useI18n} from 'vue-i18n';
 
 export default {
   name: "ProjectCard",
@@ -42,7 +46,11 @@ export default {
   },
   components: {
     IconLink,
-  }
+  },
+  setup() {
+    const {t} = useI18n();
+    return { dataCards, t};
+  },
 };
 </script>
 
