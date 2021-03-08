@@ -12,17 +12,47 @@
       "contact": "CONTACT"
     }
   },
-  "home":
-    {
-      "title": "I create cool stuff for the web.",
-      "content": { 
-        "p0": "Hello! I’m Saul, Software Engineer based in London, UK. I'm strong team player who truly believes on collaborative work, always eager to explore new paths and build things for the web with intuitive user interfaces.",
-        "p1": "Second phrase"
-      },
-      "buttons":
-        {
-          "text": "GET IN TOUCH",
-          "url": "mailto:email@example.com"
-        }
+  "home": {
+    "title": "I create cool stuff for the web.",
+    "content": {
+      "p0": "Hello! I’m Saul, Software Engineer based in London, UK. I'm strong team player who truly believes on collaborative work, always eager to explore new paths and build things for the web with intuitive user interfaces.",
+      "p1": "Second phrase"
+    },
+    "buttons": {
+      "text": "GET IN TOUCH",
+      "url": "mailto:email@example.com"
     }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "content": {
+      "p0": "My inbox is always open to suggestion and new exploring paths. Whether you have a question or just want to say hi, I'll try my best to get back to you!"
+    },
+    "buttons": {
+      "btn0": {
+        "text": "SAY HELLO",
+        "url": "mailto:email@example.com"
+      }
+    }
+  },
+  "work": {
+    "w01":   {
+      "id": "Work01",
+      "title": "THIS IS THE PROJECT TILE",
+      "content": {
+        "p0": "Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna."
+      },
+      "frameworks": {
+        "name0": "Node",
+        "name1": "Express",
+        "name2": "Firebase",
+        "name3": "Vue"
+      },
+      "icons": {
+        "icon0" : { "name": "githubFull", "w": 24, "h": 24, "style": "icon-filled" },
+        "icon1" : { "name": "openLink", "w": 25, "h": 25, "style": "icon-filled" }
+      },
+      "img": "work-img-sample.jpg"
+    }
+  }
 }
