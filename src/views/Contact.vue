@@ -6,9 +6,10 @@
       :key="index"
     >
       <div class="col-span-3">
-        <h1 class="h1-title">{{ intro.title }}</h1>
+        <h1 class="h1-title">{{ t('contact.title') }}</h1>
         <p v-for="(p, index) in intro.content" :key="index" class="max-w-xl dark:text-white">
-          {{ p.text }}
+          <!-- {{ p.text }} -->
+          {{ t(`contact.content.p${index}`)}}
         </p>
       </div>
       <div class="col-span-3 mt-10">
@@ -19,8 +20,10 @@
           :href="button.url"
           target="_blank"
           role="button"
-          >{{ button.text }}</a
-        >
+          >
+          <!-- {{ button.text }} -->
+          {{ t(`contact.buttons.btn${index}.text`)}}
+          </a>
       </div>
     </div>
   </div>
@@ -28,6 +31,7 @@
 
 <script>
 import dataContact from "../content/contact";
+import {useI18n} from 'vue-i18n';
 
 export default {
   name: "Contact",
@@ -36,7 +40,8 @@ export default {
   },
   setup() {
     const contact = dataContact;
-    return { contact };
+    const {t,} = useI18n();
+    return { contact, t };
   },
 };
 </script>

@@ -12,17 +12,142 @@
       "contact": "CONTACT"
     }
   },
-  "home":
-    {
-      "title": "I create cool stuff for the web.",
-      "content": { 
-        "p0": "Hello! I’m Saul, Software Engineer based in London, UK. I'm strong team player who truly believes on collaborative work, always eager to explore new paths and build things for the web with intuitive user interfaces.",
-        "p1": "Second phrase"
-      },
-      "buttons":
-        {
-          "text": "GET IN TOUCH",
-          "url": "mailto:email@example.com"
-        }
+  "home": {
+    "title": "I create cool stuff for the web.",
+    "content": {
+      "p0": "Hello! I’m Saul, Software Engineer based in London, UK. I'm strong team player who truly believes on collaborative work, always eager to explore new paths and build things for the web with intuitive user interfaces.",
+      "p1": "Second phrase"
+    },
+    "buttons": {
+      "text": "GET IN TOUCH",
+      "url": "mailto:email@example.com"
     }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "content": {
+      "p0": "My inbox is always open to suggestion and new exploring paths. Whether you have a question or just want to say hi, I'll try my best to get back to you!"
+    },
+    "buttons": {
+      "btn0": {
+        "text": "SAY HELLO",
+        "url": "mailto:email@example.com"
+      }
+    }
+  },
+  "work": {
+    "title": "Some of the projects I've built",
+    "content": {
+      "p0": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam"
+    }
+  },
+  "cards": {
+    "w0": {
+      "id": "Card00",
+      "title": "PROJECT 00",
+      "content": {
+        "p0": "Text for project00"
+      },
+      "frameworks": {
+        "name0": "Node",
+        "name1": "Express",
+        "name2": "Firebase",
+        "name3": "Vue"
+      },
+      "icons": {
+        "icon0": {
+          "name": "githubFull",
+          "w": 24,
+          "h": 24,
+          "style": "icon-filled",
+          "URL": "#"
+        },
+        "icon1": {
+          "name": "openLink",
+          "w": 25,
+          "h": 25,
+          "style": "icon-filled",
+          "URL": "#"
+        }
+      },
+      "img": "work-img-sample.jpg"
+    },
+    "w1": {
+      "id": "Card01",
+      "title": "PROJECT 01",
+      "content": {
+        "p0": "Text for project01."
+      },
+      "frameworks": {
+        "name0": "Node",
+        "name1": "Express",
+        "name2": "Firebase",
+        "name3": "Vue"
+      },
+      "icons": {
+        "icon0": {
+          "name": "githubFull",
+          "w": 24,
+          "h": 24,
+          "style": "icon-filled",
+          "URL": "#"
+        },
+        "icon1": {
+          "name": "openLink",
+          "w": 25,
+          "h": 25,
+          "style": "icon-filled",
+          "URL": "#"
+        }
+      },
+      "img": "work-img-sample.jpg"
+    },
+    "w2": {
+      "id": "Card02",
+      "title": "PROJECT 02",
+      "content": {
+        "p0": "Text for project02."
+      },
+      "frameworks": {
+        "name0": "Node",
+        "name1": "Express",
+        "name2": "Firebase",
+        "name3": "Vue"
+      },
+      "icons": {
+        "icon0": {
+          "name": "githubFull",
+          "w": 24,
+          "h": 24,
+          "style": "icon-filled",
+          "URL": "#"
+        },
+        "icon1": {
+          "name": "openLink",
+          "w": 25,
+          "h": 25,
+          "style": "icon-filled",
+          "URL": "#"
+        }
+      },
+      "img": "work-img-sample.jpg"
+    }
+  },
+  "about": {
+      "title": "About me",
+      "img_lg": "img_lg.png",
+      "img_sm": "img_sm.png",
+      "content": {
+          "p0": "I like to build products for the internet with great user interfaces and performant experiences. I’m strong team player who truly believes on collaborative work, always eager to explore new paths.",
+          "p1": "In my spare time I create small web applications while learning new programming languages. I also playing handball and running for a few years now. Love technology, videogames and cinema.",
+          "p2": "Here are few technologies I’ve been working with recently:",
+          "ul": {
+            "li0": "Javascript (ES6+)",
+            "li1": "Vue",
+            "li2": "React",
+            "li3": "HTML & (S)CSS",
+            "li4": "Node.js"
+          }
+     }
+  }
 }

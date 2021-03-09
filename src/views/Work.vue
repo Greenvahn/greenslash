@@ -1,33 +1,35 @@
 <template>
-  <div class="content-wrap">
-    <div class="content col-span-3 space-y-4 mb-16">
-      <h1 class="h1-title">Some of the projects I've built</h1>
-      <p class="dark:text-white">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-        volutpat.
-      </p>
+  <div>
+    <div class="content-wrap" v-for="(work, index) in works" :key="index">
+      <div class="content col-span-3 space-y-4 mb-16">
+        <h1 class="h1-title">{{ t(`work.title`) }}</h1>
+        <p
+          v-for="(p, index) in work.content"
+          :key="index"
+          class="dark:text-white"
+        >
+          {{ t(`work.content.p${index}`) }}
+        </p>
+      </div>
+      <ProjectCard />
     </div>
-    <ProjectCard
-      v-for="(card, index) in cards"
-      :card="card"
-      :key="index"
-    />
   </div>
 </template>
 
 <script>
 import ProjectCard from "../components/projectCard";
-import dataWorks from "../content/works"
+import dataWorks from "../content/works";
+import { useI18n } from "vue-i18n";
 
 export default {
   name: "Work",
   components: {
-    ProjectCard,
+    ProjectCard
   },
   setup() {
-    const cards = dataWorks;
-    return { cards };
+    const {t} = useI18n();
+    const works = dataWorks;
+    return { works, t };
   },
 };
 </script>

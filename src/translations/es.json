@@ -12,17 +12,142 @@
       "contact": "CONTACTO"
     }
   },
-  "home":
-    {
-      "title": "Creo cosas muy guays para la web",
-      "content": { 
-        "p0": "Hola! Soy Saul, Ingeniero the software con base en Londres, Reino Unido. Me considero una pieza importante para cualquier equipo y creo en el trabajo en equipo. Siempre dispuesto para explorar nuevas vias y construir toda variedad de productos para la web.",
-        "p1": "Segunda frase" 
-      },
-      "buttons":
-        {
-          "text": "Ponte en contacto",
-          "url": "mailto:email@example.com"
-        }
+  "home": {
+    "title": "Creo cosas muy guays para la web",
+    "content": {
+      "p0": "Hola! Soy Saul, Ingeniero the software con base en Londres, Reino Unido. Me considero una pieza importante para cualquier equipo y creo en el trabajo en equipo. Siempre dispuesto para explorar nuevas vias y construir toda variedad de productos para la web.",
+      "p1": "Segunda frase"
+    },
+    "buttons": {
+      "text": "Ponte en contacto",
+      "url": "mailto:email@example.com"
     }
+  },
+  "contact": {
+    "title": "Ponte en contacto",
+    "content": {
+      "p0": "Mi e-mail siempre esta abierto a propuestas y nuevos proyectos."
+    },
+    "buttons": {
+      "btn0": {
+        "text": "HOLA!",
+        "url": "mailto:email@example.com"
+      }
+    }
+  },
+  "work": {
+    "title": "Algunos de mis proyectos",
+    "content": {
+      "p0": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam"
+    }
+  },
+  "cards": {
+    "w0": {
+      "id": "Card00",
+      "title": "PROYECTO 00",
+      "content": {
+        "p0": "Contenido del proyecto 00"
+      },
+      "frameworks": {
+        "name0": "Node",
+        "name1": "Express",
+        "name2": "Firebase",
+        "name3": "Vue"
+      },
+      "icons": {
+        "icon0": {
+          "name": "githubFull",
+          "w": 24,
+          "h": 24,
+          "style": "icon-filled",
+          "URL": "#"
+        },
+        "icon1": {
+          "name": "openLink",
+          "w": 25,
+          "h": 25,
+          "style": "icon-filled",
+          "URL": "#"
+        }
+      },
+      "img": "work-img-sample.jpg"
+    },
+    "w1": {
+      "id": "Card01",
+      "title": "PROYECTO 01",
+      "content": {
+        "p0": "Contenido del proyecto 01."
+      },
+      "frameworks": {
+        "name0": "Node",
+        "name1": "Express",
+        "name2": "Firebase",
+        "name3": "Vue"
+      },
+      "icons": {
+        "icon0": {
+          "name": "githubFull",
+          "w": 24,
+          "h": 24,
+          "style": "icon-filled",
+          "URL": "#"
+        },
+        "icon1": {
+          "name": "openLink",
+          "w": 25,
+          "h": 25,
+          "style": "icon-filled",
+          "URL": "#"
+        }
+      },
+      "img": "work-img-sample.jpg"
+    },
+    "w2": {
+      "id": "Card02",
+      "title": "PROYECTO 02",
+      "content": {
+        "p0": "Contenido del proyecto 02."
+      },
+      "frameworks": {
+        "name0": "Node",
+        "name1": "Express",
+        "name2": "Firebase",
+        "name3": "Vue"
+      },
+      "icons": {
+        "icon0": {
+          "name": "githubFull",
+          "w": 24,
+          "h": 24,
+          "style": "icon-filled",
+          "URL": "#"
+        },
+        "icon1": {
+          "name": "openLink",
+          "w": 25,
+          "h": 25,
+          "style": "icon-filled",
+          "URL": "#"
+        }
+      },
+      "img": "work-img-sample.jpg"
+    }
+  },
+  "about": {
+      "title": "Sobre mi",
+      "img_lg": "img_lg.png",
+      "img_sm": "img_sm.png",
+      "content": {
+          "p0": "Me gusta construir productos para internet con buenas interfaces que generen una buea eperiencia en el usuario ademas de un buen rendimiento.",
+          "p1": "En mi tiempo libre creo pequenas aplicaciones web mientras aprendo nuevos lenguajes de programción y consolido conocimentos. También soy una persona muy activa: juego al balónmano y me gusta el running. Amo la tecnologia, videojuegos y el cine.",
+          "p2": "Aqui dejo algunas de las técnologias que he estado usando últimamente",
+          "ul": {
+            "li0": "Javascript (ES6+)",
+            "li1": "Vue",
+            "li2": "React",
+            "li3": "HTML & (S)CSS",
+            "li4": "Node.js"
+          }
+     }
+  }
 }
