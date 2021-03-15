@@ -11,7 +11,6 @@
   "dependencies": {
     "autoprefixer": "^9.8.6",
     "core-js": "^3.6.5",
-    "firebase-tools": "^9.4.0",
     "postcss": "^7.0.35",
     "sass": "^1.32.0",
     "sass-loader": "^10.1.0",
@@ -27,7 +26,8 @@
     "@vue/compiler-sfc": "^3.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.0.0-0"
+    "eslint-plugin-vue": "^7.0.0-0",
+    "firebase-tools": "^9.4.0"
   },
   "eslintConfig": {
     "root": true,
