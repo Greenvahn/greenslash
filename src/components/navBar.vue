@@ -20,7 +20,7 @@
       <LangSwitcher class="ml-7 mr-7" />
       <a
         class="btn-green text-sm h-9 leading-5"
-        href="saulverde_cv_2021.pdf"
+        href="Saul Verde - Frontend Developer.pdf"
         target="_blank"
         role="button"
         >Resume</a

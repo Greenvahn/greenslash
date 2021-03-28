@@ -11,7 +11,7 @@
       <div class="mt-16">
         <a
           class="btn-green tex-sm"
-          href="saulverde_cv_2021.pdf"
+          href="Saul Verde - Frontend Developer.pdf"
           target="_blank"
           role="button"
           >Resume</a
