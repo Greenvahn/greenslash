@@ -16,12 +16,20 @@
         "text": "Here are few technologies I’ve been working with recently:"
       },
       {
-        "ul": [
+        "ul1": [
           { "li": "Javascript (ES6+)" },
           { "li": "Vue" },
           { "li": "React" },
           { "li": "HTML & (S)CSS" },
           { "li": "Node.js" }
+        ]
+      },
+      {
+        "ul2": [
+          { "li": "Illustrator" },
+          { "li": "Photoshop" },
+          { "li": "XD" },
+          { "li": "Indesign" }
         ]
       }
     ]

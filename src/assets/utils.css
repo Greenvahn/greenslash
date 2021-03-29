@@ -43,3 +43,9 @@
 .acc .switch:focus {
   outline: 3px solid blue;
 }
+
+/* Lists */
+ul li:first-child {
+  font-weight: bold;
+  margin: 10px 0px;
+}
