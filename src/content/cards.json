@@ -14,10 +14,10 @@
       { "name": "Vue" }
     ],
     "icons": [
-      { "name": "githubFull", "w": 24, "h": 24, "style": "icon-filled", "URL": "#" },
-      { "name": "openLink", "w": 25, "h": 25, "style": "icon-filled", "URL": "#" }
+      { "name": "githubFull", "w": 24, "h": 24, "style": "icon-filled", "URL": "https://github.com/Greenvahn/xweather" },
+      { "name": "openLink", "w": 25, "h": 25, "style": "icon-filled", "URL": "https://x-weather-app.web.app/" }
     ],
-    "img": "work-img-sample.jpg"
+    "img": "work-xweather-sample.jpg"
   },  {
     "id": "Work02",
     "title": "THIS IS THE PROJECT TILE",
@@ -33,10 +33,10 @@
       { "name": "Vue" }
     ],
     "icons": [
-      { "name": "githubFull", "w": 24, "h": 24, "style": "icon-filled", "URL": "#" },
-      { "name": "openLink", "w": 25, "h": 25, "style": "icon-filled", "URL": "#" }
+      { "name": "githubFull", "w": 24, "h": 24, "style": "icon-filled", "URL": "https://github.com/Greenvahn/Yeti-Data" },
+      { "name": "openLink", "w": 25, "h": 25, "style": "icon-filled", "URL": "https://yeti-data.web.app/" }
     ],
-    "img": "work-img-sample.jpg"
+    "img": "work-yetidata-sample.jpg"
   },  {
     "id": "Work03",
     "title": "THIS IS THE PROJECT TILE",

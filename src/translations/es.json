@@ -45,15 +45,15 @@
   "cards": {
     "w0": {
       "id": "Card00",
-      "title": "PROYECTO 00",
+      "title": "XWEATHER",
       "content": {
-        "p0": "Contenido del proyecto 00"
+        "p0": "Esta web app te deja comprobar el tiempo en cualquier ricón del mundo."
       },
       "frameworks": {
-        "name0": "Node",
-        "name1": "Express",
+        "name0": "Vue",
+        "name1": "Node.js",
         "name2": "Firebase",
-        "name3": "Vue"
+        "name3": "OpenWeather API"
       },
       "icons": {
         "icon0": {
@@ -75,15 +75,15 @@
     },
     "w1": {
       "id": "Card01",
-      "title": "PROYECTO 01",
+      "title": "YETI DATA",
       "content": {
-        "p0": "Contenido del proyecto 01."
+        "p0": "Applicación web que lee archivos CSV para mostrar la información en tablas."
       },
       "frameworks": {
-        "name0": "Node",
-        "name1": "Express",
-        "name2": "Firebase",
-        "name3": "Vue"
+        "name0": "Vue",
+        "name1": "Vuex",
+        "name2": "Bulma",
+        "name3": "CSV"
       },
       "icons": {
         "icon0": {
