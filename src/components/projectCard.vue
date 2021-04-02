@@ -14,7 +14,7 @@
       <img :src="require(`../assets/${card.img}`)" class="w-full"/>
 
       <div class="content grid grid-cols-3 gap-2 bg-black text-white">
-        <div class="col-span-3 text-sm p-3">
+        <div class="min-height-185 col-span-3 text-sm p-3">
           <h3 class="font-bold py-2 ">{{ t(`cards.w${cardIndex}.title`) }}</h3>
           <p v-for="(p, index) in card.content" :key="index">
             {{ t(`cards.w${cardIndex}.content.p${index}`) }}
@@ -25,7 +25,7 @@
               :key="index"
               class="inline-block"
             >
-              {{ skill.name }}
+              {{ t(`cards.w${cardIndex}.frameworks.name${index}`) }}
             </li>
           </ul>
         </div>
@@ -54,8 +54,14 @@ export default {
 <style lang="scss">
 .project-card {
   transition: margin-top 0.2s ease-in;
+  min-height: 430px;
   &:hover {
     margin-top: -5px;
+  }
+
+  .min-height-185 {
+    /* Equalizes the minimun height for all the boxes*/
+    min-height: 185px;
   }
 }
 </style>
