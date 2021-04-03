@@ -15,7 +15,8 @@
     ],
     "icons": [
       { "name": "openLink", "w": 25, "h": 25, "style": "icon-filled", "URL": "https://x-weather-app.web.app/" },
-      { "name": "githubFull", "w": 24, "h": 24, "style": "icon-filled", "URL": "https://github.com/Greenvahn/xweather" }
+      { "name": "githubFull", "w": 24, "h": 24, "style": "icon-filled", "URL": "https://github.com/Greenvahn/xweather" },
+      { "name": "benhance", "w": 25, "h": 25, "style": "icon-filled", "URL": "https://www.behance.net/gallery/103830659/XWeather" }
     ],
     "img": "work-xweather-sample.jpg"
   },  {
