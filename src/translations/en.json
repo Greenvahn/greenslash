@@ -37,9 +37,9 @@
     }
   },
   "work": {
-    "title": "Some of the projects I've built",
+    "title": "Some of the things I've built",
     "content": {
-      "p0": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam"
+      "p0": "Below, there are some of my personal featured projects. You can find other projects at the bottom of the page."
     }
   },
   "cards": {
@@ -105,15 +105,15 @@
     },
     "w2": {
       "id": "Card02",
-      "title": "PROJECT 02",
+      "title": "ROCKBREED",
       "content": {
-        "p0": "Text for project02."
+        "p0": "Website platform concept and prototype for alternative rock music."
       },
       "frameworks": {
-        "name0": "Node",
-        "name1": "Express",
-        "name2": "Firebase",
-        "name3": "Vue"
+        "name0": "Vue",
+        "name1": "Firebase",
+        "name2": "HTML",
+        "name3": "CSS"
       },
       "icons": {
         "icon0": {
@@ -131,7 +131,7 @@
           "URL": "#URL are placed in cards.json"
         }
       },
-      "img": "work-img-sample.jpg"
+      "img": "work-rockbreed-sample.jpg"
     }
   },
   "about": {
