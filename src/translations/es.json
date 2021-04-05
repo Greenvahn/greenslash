@@ -13,7 +13,7 @@
     }
   },
   "home": {
-    "title": "Creo cosas muy guays para la web",
+    "title": "Creo cosas para la web",
     "content": {
       "p0": "¡Hola! Soy Saúl, un ingeniero de software nacido en España, con base en Londres. Entre mis intereses están: el código y la programación, artes, juegos, filosofía y deportes.",
       "p1": "Asistí a mis primeras clases de informática con tan solo siete años y desde entonces he estado fascinado por el mundo de los ordenadores. Entre mi educación académica destacan dos títulos universitarios, Diseño Industrial y Comunicación Audio-visual. En mi último año como universitario he viajado a Escocia para estudiar “Computer Arts”, dónde he podido profundizar todavía más si cabe en el mundo de los ordenadores. Desde entonces, he trabajado como diseñador de producto en Praga (República Checa) y como diseñador digital en la Coruña. En estos últimos años he trabajado como ingeniero de software en el Reino Unido, especializado en el área de e-learning.",
@@ -39,7 +39,7 @@
   "work": {
     "title": "Algunos de mis proyectos",
     "content": {
-      "p0": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam"
+      "p0": "Estos son algunos de mis proyectos personales destacados. Puedes ver otros proyectos al final de esta página."
     }
   },
   "cards": {
@@ -105,15 +105,15 @@
     },
     "w2": {
       "id": "Card02",
-      "title": "PROYECTO 02",
+      "title": "ROCKBREED",
       "content": {
-        "p0": "Contenido del proyecto 02."
+        "p0": "Rock alternativo en la web - prototipo de plataforma web."
       },
       "frameworks": {
-        "name0": "Node",
-        "name1": "Express",
-        "name2": "Firebase",
-        "name3": "Vue"
+        "name0": "Vue",
+        "name1": "Firebase",
+        "name2": "HTML",
+        "name3": "CSS"
       },
       "icons": {
         "icon0": {
