@@ -1,0 +1,70 @@
+[
+  {
+    "id": "react-gif-search",
+    "content": [
+      {
+        "text": "Short description"
+      }
+    ],
+    "labels": [
+      { "name": "label00" },
+      { "name": "label01" },
+      { "name": "label02" },
+      { "name": "label02" }
+    ],
+    "icons": [
+      { "name": "githubFull", "w": 24, "h": 24, "style": "icon-filled", "URL": "https://github.com/Greenvahn/react-gif-search" }
+    ]
+  },
+  {
+    "id": "Scoreboard UI",
+    "content": [
+      {
+        "text": "Short description"
+      }
+    ],
+    "labels": [
+      { "name": "label00" },
+      { "name": "label01" },
+      { "name": "label02" },
+      { "name": "label02" }
+    ],
+    "icons": [
+      { "name": "githubFull", "w": 24, "h": 24, "style": "icon-filled", "URL": "https://github.com/Greenvahn/react-scoreboard" }
+    ]
+  },
+  {
+    "id": "Voting up system",
+    "content": [
+      {
+        "text": "Short description"
+      }
+    ],
+    "labels": [
+      { "name": "label00" },
+      { "name": "label01" },
+      { "name": "label02" },
+      { "name": "label02" }
+    ],
+    "icons": [
+      { "name": "githubFull", "w": 24, "h": 24, "style": "icon-filled", "URL": "https://github.com/Greenvahn/vue-votingUp" }
+    ]
+  },
+  {
+    "id": "React Router test",
+    "content": [
+      {
+        "text": "Short description"
+      }
+    ],
+    "labels": [
+      { "name": "label00" },
+      { "name": "label01" },
+      { "name": "label02" },
+      { "name": "label02" }
+    ],
+    "icons": [
+      { "name": "githubFull", "w": 24, "h": 24, "style": "icon-filled", "URL": "https://github.com/Greenvahn/react-router-test" }
+    ]
+  }
+]

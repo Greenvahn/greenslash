@@ -38,6 +38,7 @@
   },
   "work": {
     "title": "Some of the things I've built",
+    "second-title": "Others",
     "content": {
       "p0": "Below, there are some of my personal featured projects. You can find other projects at the bottom of the page."
     }
@@ -134,29 +135,138 @@
       "img": "work-rockbreed-sample.jpg"
     }
   },
-  "about": {
-      "title": "About me",
-      "img_lg": "sv_portrait.png",
-      "img_sm": "sv_portrait_sm.png",
-      "content": {
-          "p0": "I like to build products for the web with a special focus on great user interfaces and user experiences. My areas of expertise are design, code and accessibility. I perceive myself as team player who truly believes in collaborative work to create new products and overcome any challenges that arise.",
-          "p1": "I work with a range of JavaScript frameworks/libraries like React but my personal go to choice is Vue.",
-          "p2": "Below listed some of the technologies I’ve been working with recently. I like to learn new skills so if you don’t see it on the list, I’m keen to  hear about it and take on new challenges:",
-          "ul1": {
-            "li0": "Technical SKills",
-            "li1": "Javascript (ES6+)",
-            "li2": "Vue",
-            "li3": "React",
-            "li4": "HTML & (S)CSS",
-            "li5": "Node.js"
-          },
-          "ul2": {
-            "li0": "Design SKills",
-            "li1": "Illustrator",
-            "li2": "Photoshop",
-            "li3": "XD",
-            "li4": "Indesign"
+  "projectList": {
+    "listItem": {
+      "project0": {
+        "id": "GIF search bar",
+        "content": {
+          "p0": "Gif search bar built with React"
+        },
+        "labels": {
+          "name0": "React",
+          "name1": "JS",
+          "name2": "Axios",
+          "name3": "API"
+        },
+        "icons": {
+          "icon0": {
+            "name": "githubFull",
+            "w": 24,
+            "h": 24,
+            "style": "icon-filled",
+            "URL": "#URL are placed in cards.json"
           }
-     }
+        }
+      },
+      "project1": {
+        "id": "Scoreboard UI",
+        "content": {
+          "p0": "Scoring system UI built with React"
+        },
+        "labels": {
+          "name0": "React",
+          "name1": "JS",
+          "name2": "HTML",
+          "name3": "CSS"
+        },
+        "icons": {
+          "icon0": {
+            "name": "githubFull",
+            "w": 24,
+            "h": 24,
+            "style": "icon-filled",
+            "URL": "#URL are placed in cards.json"
+          },
+          "icon1": {
+            "name": "openLink",
+            "w": 25,
+            "h": 25,
+            "style": "icon-filled",
+            "URL": "#URL are placed in cards.json"
+          }
+        }
+      },
+      "project2": {
+        "id": "Voting-up system",
+        "content": {
+          "p0": "A short list of articles with a voting system"
+        },
+        "labels": {
+          "name0": "Vue",
+          "name1": "JS",
+          "name2": "HTML",
+          "name3": "CSS"
+        },
+        "icons": {
+          "icon0": {
+            "name": "githubFull",
+            "w": 24,
+            "h": 24,
+            "style": "icon-filled",
+            "URL": "#URL are placed in cards.json"
+          },
+          "icon1": {
+            "name": "openLink",
+            "w": 25,
+            "h": 25,
+            "style": "icon-filled",
+            "URL": "#URL are placed in cards.json"
+          }
+        }
+      },
+      "project3": {
+        "id": "React router",
+        "content": {
+          "p0": "Small website that uses React router"
+        },
+        "labels": {
+          "name0": "React",
+          "name1": "JS",
+          "name2": "HTML",
+          "name3": "CSS"
+        },
+        "icons": {
+          "icon0": {
+            "name": "githubFull",
+            "w": 24,
+            "h": 24,
+            "style": "icon-filled",
+            "URL": "#URL are placed in cards.json"
+          },
+          "icon1": {
+            "name": "openLink",
+            "w": 25,
+            "h": 25,
+            "style": "icon-filled",
+            "URL": "#URL are placed in cards.json"
+          }
+        }
+      }
+    }
+  },
+  "about": {
+    "title": "About me",
+    "img_lg": "sv_portrait.png",
+    "img_sm": "sv_portrait_sm.png",
+    "content": {
+      "p0": "I like to build products for the web with a special focus on great user interfaces and user experiences. My areas of expertise are design, code and accessibility. I perceive myself as team player who truly believes in collaborative work to create new products and overcome any challenges that arise.",
+      "p1": "I work with a range of JavaScript frameworks/libraries like React but my personal go to choice is Vue.",
+      "p2": "Below listed some of the technologies I’ve been working with recently. I like to learn new skills so if you don’t see it on the list, I’m keen to  hear about it and take on new challenges:",
+      "ul1": {
+        "li0": "Technical SKills",
+        "li1": "Javascript (ES6+)",
+        "li2": "Vue",
+        "li3": "React",
+        "li4": "HTML & (S)CSS",
+        "li5": "Node.js"
+      },
+      "ul2": {
+        "li0": "Design SKills",
+        "li1": "Illustrator",
+        "li2": "Photoshop",
+        "li3": "XD",
+        "li4": "Indesign"
+      }
+    }
   }
 }

@@ -38,6 +38,7 @@
   },
   "work": {
     "title": "Algunos de mis proyectos",
+    "second-title": "Otros",
     "content": {
       "p0": "Estos son algunos de mis proyectos personales destacados. Puedes ver otros proyectos al final de esta página."
     }
@@ -132,6 +133,115 @@
         }
       },
       "img": "work-img-sample.jpg"
+    }
+  },
+  "projectList": {
+    "listItem": {
+      "project0": {
+        "id": "GIF search bar",
+        "content": {
+          "p0": "Bara de búsqueda para GIFs realizada con React"
+        },
+        "labels": {
+          "name0": "React",
+          "name1": "JS",
+          "name2": "Axios",
+          "name3": "API"
+        },
+        "icons": {
+          "icon0": {
+            "name": "githubFull",
+            "w": 24,
+            "h": 24,
+            "style": "icon-filled",
+            "URL": "#URL are placed in cards.json"
+          }
+        }
+      },
+      "project1": {
+        "id": "Scoreboard UI",
+        "content": {
+          "p0": "Marcador de puntos construido con React"
+        },
+        "labels": {
+          "name0": "React",
+          "name1": "JS",
+          "name2": "HTML",
+          "name3": "CSS"
+        },
+        "icons": {
+          "icon0": {
+            "name": "githubFull",
+            "w": 24,
+            "h": 24,
+            "style": "icon-filled",
+            "URL": "#URL are placed in cards.json"
+          },
+          "icon1": {
+            "name": "openLink",
+            "w": 25,
+            "h": 25,
+            "style": "icon-filled",
+            "URL": "#URL are placed in cards.json"
+          }
+        }
+      },
+      "project2": {
+        "id": "Voting-up system",
+        "content": {
+          "p0": "Simple lista de articulos con sistema de votación integrado"
+        },
+        "labels": {
+          "name0": "Vue",
+          "name1": "JS",
+          "name2": "HTML",
+          "name3": "CSS"
+        },
+        "icons": {
+          "icon0": {
+            "name": "githubFull",
+            "w": 24,
+            "h": 24,
+            "style": "icon-filled",
+            "URL": "#URL are placed in cards.json"
+          },
+          "icon1": {
+            "name": "openLink",
+            "w": 25,
+            "h": 25,
+            "style": "icon-filled",
+            "URL": "#URL are placed in cards.json"
+          }
+        }
+      },
+      "project3": {
+        "id": "React router",
+        "content": {
+          "p0": "Página web construida con React router"
+        },
+        "labels": {
+          "name0": "React",
+          "name1": "JS",
+          "name2": "HTML",
+          "name3": "CSS"
+        },
+        "icons": {
+          "icon0": {
+            "name": "githubFull",
+            "w": 24,
+            "h": 24,
+            "style": "icon-filled",
+            "URL": "#URL are placed in cards.json"
+          },
+          "icon1": {
+            "name": "openLink",
+            "w": 25,
+            "h": 25,
+            "style": "icon-filled",
+            "URL": "#URL are placed in cards.json"
+          }
+        }
+      }
     }
   },
   "about": {

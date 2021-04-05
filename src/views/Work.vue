@@ -12,22 +12,29 @@
         </p>
       </div>
       <ProjectCard />
+      <div class="content col-span-3 space-y-4 mb-16">
+        <h2 class="sub-heading dark:text-white">{{ t(`work.second-title`) }}</h2>
+        <ProjectList />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import ProjectCard from "../components/projectCard";
+
 import dataWorks from "../content/works";
+import ProjectList from "../components/projectList";
 import { useI18n } from "vue-i18n";
 
 export default {
   name: "Work",
   components: {
-    ProjectCard
+    ProjectCard,
+    ProjectList
   },
   setup() {
-    const {t} = useI18n();
+    const { t } = useI18n();
     const works = dataWorks;
     return { works, t };
   },
@@ -40,5 +47,9 @@ export default {
   &:hover {
     margin-top: -5px;
   }
+}
+
+.sub-heading {
+  font-size: 2rem;
 }
 </style>
