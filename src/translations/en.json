@@ -136,8 +136,8 @@
   },
   "about": {
       "title": "About me",
-      "img_lg": "img_lg.png",
-      "img_sm": "img_sm.png",
+      "img_lg": "sv_portrait.png",
+      "img_sm": "sv_portrait_sm.png",
       "content": {
           "p0": "I like to build products for the web with a special focus on great user interfaces and user experiences. My areas of expertise are design, code and accessibility. I perceive myself as team player who truly believes in collaborative work to create new products and overcome any challenges that arise.",
           "p1": "I work with a range of JavaScript frameworks/libraries like React but my personal go to choice is Vue.",

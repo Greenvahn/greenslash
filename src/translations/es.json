@@ -136,8 +136,8 @@
   },
   "about": {
       "title": "Sobre mi",
-      "img_lg": "img_lg.png",
-      "img_sm": "img_sm.png",
+      "img_lg": "sv_portrait.png",
+      "img_sm": "sv_portrait_sm.png",
       "content": {
           "p0": "Me gusta construir y desarrollar productos para la web con una atención especial en las interfaces de usuario (UI) . Soy experto en áreas de diseño, código y programación. Creo en el trabajo en equipo como pieza fundamental para crear nuevos productos y solucionar los posibles retos que se puedan presentar.",
           "p1": "Trabajo con diferentes frameworks o librerías de Javascript como React pero mi preferencia personal para el día a día es Vue.",
