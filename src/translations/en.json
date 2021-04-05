@@ -38,7 +38,7 @@
   },
   "work": {
     "title": "Some of the things I've built",
-    "second-title": "Other projects",
+    "second-title": "Others",
     "content": {
       "p0": "Below, there are some of my personal featured projects. You can find other projects at the bottom of the page."
     }
@@ -138,14 +138,36 @@
   "projectList": {
     "listItem": {
       "project0": {
-        "id": "Project 00 title",
+        "id": "GIF search bar",
         "content": {
-          "p0": "Short description"
+          "p0": "Gif search bar built with React"
         },
         "labels": {
-          "name0": "labelab",
-          "name1": "labelds",
-          "name2": "label34"
+          "name0": "React",
+          "name1": "JS",
+          "name2": "Axios",
+          "name3": "API"
+        },
+        "icons": {
+          "icon0": {
+            "name": "githubFull",
+            "w": 24,
+            "h": 24,
+            "style": "icon-filled",
+            "URL": "#URL are placed in cards.json"
+          }
+        }
+      },
+      "project1": {
+        "id": "Scoreboard UI",
+        "content": {
+          "p0": "Scoring system UI built with React"
+        },
+        "labels": {
+          "name0": "React",
+          "name1": "JS",
+          "name2": "HTML",
+          "name3": "CSS"
         },
         "icons": {
           "icon0": {
@@ -164,15 +186,44 @@
           }
         }
       },
-      "project1": {
-        "id": "Project 01 title",
+      "project2": {
+        "id": "Voting-up system",
         "content": {
-          "p0": "Short description 2"
+          "p0": "A short list of articles with a voting system"
         },
         "labels": {
-          "name0": "label00",
-          "name1": "label01",
-          "name2": "label02"
+          "name0": "Vue",
+          "name1": "JS",
+          "name2": "HTML",
+          "name3": "CSS"
+        },
+        "icons": {
+          "icon0": {
+            "name": "githubFull",
+            "w": 24,
+            "h": 24,
+            "style": "icon-filled",
+            "URL": "#URL are placed in cards.json"
+          },
+          "icon1": {
+            "name": "openLink",
+            "w": 25,
+            "h": 25,
+            "style": "icon-filled",
+            "URL": "#URL are placed in cards.json"
+          }
+        }
+      },
+      "project3": {
+        "id": "React router",
+        "content": {
+          "p0": "Small website that uses React router"
+        },
+        "labels": {
+          "name0": "React",
+          "name1": "JS",
+          "name2": "HTML",
+          "name3": "CSS"
         },
         "icons": {
           "icon0": {
