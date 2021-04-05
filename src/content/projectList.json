@@ -15,5 +15,22 @@
       { "name": "githubFull", "w": 24, "h": 24, "style": "icon-filled", "URL": "https://github.com/Greenvahn/xweather" },
       { "name": "openLink", "w": 25, "h": 25, "style": "icon-filled", "URL": "https://x-weather-app.web.app/" }
     ]
+  },
+  {
+    "id": "Project 02 title",
+    "content": [
+      {
+        "text": "Short description"
+      }
+    ],
+    "labels": [
+      { "name": "label00" },
+      { "name": "label01" },
+      { "name": "label02" }
+    ],
+    "icons": [
+      { "name": "githubFull", "w": 24, "h": 24, "style": "icon-filled", "URL": "https://github.com/Greenvahn/xweather" },
+      { "name": "openLink", "w": 25, "h": 25, "style": "icon-filled", "URL": "https://x-weather-app.web.app/" }
+    ]
   }
 ]
