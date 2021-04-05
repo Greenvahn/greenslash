@@ -27,12 +27,12 @@
             {{ t(`about.content.p${index}`) }}
           </p>
           <ul v-if="para.ul1" class="category float-left">
-            <li v-for="(bullet, index) in para.ul1" :key="index">
+            <li v-for="(bullet, index) in para.ul1" :key="index" class="remark">
               {{ t(`about.content.ul1.li${index}`) }}
             </li>
           </ul>
           <ul v-if="para.ul2" class="category float-left ml-12">
-            <li v-for="(bullet, index) in para.ul2" :key="index">
+            <li v-for="(bullet, index) in para.ul2" :key="index" class="remark">
               {{ t(`about.content.ul2.li${index}`) }}
             </li>
           </ul>

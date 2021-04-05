@@ -38,6 +38,7 @@
   },
   "work": {
     "title": "Some of the things I've built",
+    "second-title": "Other projects",
     "content": {
       "p0": "Below, there are some of my personal featured projects. You can find other projects at the bottom of the page."
     }
