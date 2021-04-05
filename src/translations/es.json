@@ -135,6 +135,64 @@
       "img": "work-img-sample.jpg"
     }
   },
+  "projectList": {
+    "listItem": {
+      "project0": {
+        "id": "Project 00 title",
+        "content": {
+          "p0": "Short description"
+        },
+        "labels": {
+          "name0": "labelES",
+          "name1": "labelES",
+          "name2": "labelES"
+        },
+        "icons": {
+          "icon0": {
+            "name": "githubFull",
+            "w": 24,
+            "h": 24,
+            "style": "icon-filled",
+            "URL": "#URL are placed in cards.json"
+          },
+          "icon1": {
+            "name": "openLink",
+            "w": 25,
+            "h": 25,
+            "style": "icon-filled",
+            "URL": "#URL are placed in cards.json"
+          }
+        }
+      },
+      "project1": {
+        "id": "Project 01 title",
+        "content": {
+          "p0": "Short description 2"
+        },
+        "labels": {
+          "name0": "label00",
+          "name1": "label01",
+          "name2": "label02"
+        },
+        "icons": {
+          "icon0": {
+            "name": "githubFull",
+            "w": 24,
+            "h": 24,
+            "style": "icon-filled",
+            "URL": "#URL are placed in cards.json"
+          },
+          "icon1": {
+            "name": "openLink",
+            "w": 25,
+            "h": 25,
+            "style": "icon-filled",
+            "URL": "#URL are placed in cards.json"
+          }
+        }
+      }
+    }
+  },
   "about": {
       "title": "Sobre mi",
       "img_lg": "sv_portrait.png",

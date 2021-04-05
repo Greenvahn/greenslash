@@ -135,29 +135,87 @@
       "img": "work-rockbreed-sample.jpg"
     }
   },
-  "about": {
-      "title": "About me",
-      "img_lg": "sv_portrait.png",
-      "img_sm": "sv_portrait_sm.png",
-      "content": {
-          "p0": "I like to build products for the web with a special focus on great user interfaces and user experiences. My areas of expertise are design, code and accessibility. I perceive myself as team player who truly believes in collaborative work to create new products and overcome any challenges that arise.",
-          "p1": "I work with a range of JavaScript frameworks/libraries like React but my personal go to choice is Vue.",
-          "p2": "Below listed some of the technologies I’ve been working with recently. I like to learn new skills so if you don’t see it on the list, I’m keen to  hear about it and take on new challenges:",
-          "ul1": {
-            "li0": "Technical SKills",
-            "li1": "Javascript (ES6+)",
-            "li2": "Vue",
-            "li3": "React",
-            "li4": "HTML & (S)CSS",
-            "li5": "Node.js"
+  "projectList": {
+    "listItem": {
+      "project0": {
+        "id": "Project 00 title",
+        "content": {
+          "p0": "Short description"
+        },
+        "labels": {
+          "name0": "labelab",
+          "name1": "labelds",
+          "name2": "label34"
+        },
+        "icons": {
+          "icon0": {
+            "name": "githubFull",
+            "w": 24,
+            "h": 24,
+            "style": "icon-filled",
+            "URL": "#URL are placed in cards.json"
           },
-          "ul2": {
-            "li0": "Design SKills",
-            "li1": "Illustrator",
-            "li2": "Photoshop",
-            "li3": "XD",
-            "li4": "Indesign"
+          "icon1": {
+            "name": "openLink",
+            "w": 25,
+            "h": 25,
+            "style": "icon-filled",
+            "URL": "#URL are placed in cards.json"
           }
-     }
+        }
+      },
+      "project1": {
+        "id": "Project 01 title",
+        "content": {
+          "p0": "Short description 2"
+        },
+        "labels": {
+          "name0": "label00",
+          "name1": "label01",
+          "name2": "label02"
+        },
+        "icons": {
+          "icon0": {
+            "name": "githubFull",
+            "w": 24,
+            "h": 24,
+            "style": "icon-filled",
+            "URL": "#URL are placed in cards.json"
+          },
+          "icon1": {
+            "name": "openLink",
+            "w": 25,
+            "h": 25,
+            "style": "icon-filled",
+            "URL": "#URL are placed in cards.json"
+          }
+        }
+      }
+    }
+  },
+  "about": {
+    "title": "About me",
+    "img_lg": "sv_portrait.png",
+    "img_sm": "sv_portrait_sm.png",
+    "content": {
+      "p0": "I like to build products for the web with a special focus on great user interfaces and user experiences. My areas of expertise are design, code and accessibility. I perceive myself as team player who truly believes in collaborative work to create new products and overcome any challenges that arise.",
+      "p1": "I work with a range of JavaScript frameworks/libraries like React but my personal go to choice is Vue.",
+      "p2": "Below listed some of the technologies I’ve been working with recently. I like to learn new skills so if you don’t see it on the list, I’m keen to  hear about it and take on new challenges:",
+      "ul1": {
+        "li0": "Technical SKills",
+        "li1": "Javascript (ES6+)",
+        "li2": "Vue",
+        "li3": "React",
+        "li4": "HTML & (S)CSS",
+        "li5": "Node.js"
+      },
+      "ul2": {
+        "li0": "Design SKills",
+        "li1": "Illustrator",
+        "li2": "Photoshop",
+        "li3": "XD",
+        "li4": "Indesign"
+      }
+    }
   }
 }
