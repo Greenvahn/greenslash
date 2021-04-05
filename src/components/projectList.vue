@@ -2,7 +2,7 @@
   <div
     v-for="(project, projectIndex) in datalist"
     :key="projectIndex"
-    class="flex flex-col col-span-3 text-sm p-3 bg-white text-black border border-gray-200 py-2 md:flex-row md:space-x-4"
+    class="flex flex-col col-span-3 text-sm p-3 bg-white text-black border border-gray-200 py-2 md:flex-row md:space-x-4 dark:bg-black dark:text-white dark:border-gray-900 dark:border-r-0"
   >
     <h3 class="font-bold w-full md:w-1/3">{{ t(`projectList.listItem.project${projectIndex}.id`) }}</h3>
     <p v-for="(p, pIndex) in project.content" :key="pIndex" class="w-full md:w-2/3">
@@ -17,7 +17,7 @@
       <div
         v-for="(icon, inconIndex) in project.icons"
         :key="inconIndex"
-        class="link mx-2 w-auto"
+        class="link mx-2 w-auto list-project-icon"
       >
         <a :href="icon.URL" target="_blank" class="w-auto">
           <IconLink
@@ -48,3 +48,9 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.dark .list-project-icon svg {
+  fill: white
+}
+</style>

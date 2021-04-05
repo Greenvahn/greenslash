@@ -13,7 +13,7 @@
       </div>
       <ProjectCard />
       <div class="content col-span-3 space-y-4 mb-16">
-        <h2 class="sub-heading">{{ t(`work.second-title`) }}</h2>
+        <h2 class="sub-heading dark:text-white">{{ t(`work.second-title`) }}</h2>
         <ProjectList />
       </div>
     </div>

@@ -162,5 +162,19 @@ export default {
     }
   }
 }
+
+
+/* List projects icons */
+.list-project-icon {
+    svg {
+      fill: #fff;
+    }
+    &:hover {
+      svg {
+        fill: #21d896;
+      }
+    }
+}
+
 }
 </style>
