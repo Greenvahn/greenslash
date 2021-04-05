@@ -3,6 +3,7 @@
     "title": "Home title placeholder",
     "content": [
       { "text": "Lorem ipsum" },
+      { "text": "Lorem ipsum" },
       { "text": "Lorem ipsum" }
     ],
     "buttons": [

@@ -14,10 +14,11 @@
       { "name": "Vue" }
     ],
     "icons": [
-      { "name": "githubFull", "w": 24, "h": 24, "style": "icon-filled", "URL": "#" },
-      { "name": "openLink", "w": 25, "h": 25, "style": "icon-filled", "URL": "#" }
+      { "name": "openLink", "w": 25, "h": 25, "style": "icon-filled", "URL": "https://x-weather-app.web.app/" },
+      { "name": "githubFull", "w": 24, "h": 24, "style": "icon-filled", "URL": "https://github.com/Greenvahn/xweather" },
+      { "name": "benhance", "w": 25, "h": 25, "style": "icon-filled", "URL": "https://www.behance.net/gallery/103830659/XWeather" }
     ],
-    "img": "work-img-sample.jpg"
+    "img": "work-xweather-sample.jpg"
   },  {
     "id": "Work02",
     "title": "THIS IS THE PROJECT TILE",
@@ -33,10 +34,10 @@
       { "name": "Vue" }
     ],
     "icons": [
-      { "name": "githubFull", "w": 24, "h": 24, "style": "icon-filled", "URL": "#" },
-      { "name": "openLink", "w": 25, "h": 25, "style": "icon-filled", "URL": "#" }
+      { "name": "openLink", "w": 25, "h": 25, "style": "icon-filled", "URL": "https://yeti-data.web.app/" },
+      { "name": "githubFull", "w": 24, "h": 24, "style": "icon-filled", "URL": "https://github.com/Greenvahn/Yeti-Data" }
     ],
-    "img": "work-img-sample.jpg"
+    "img": "work-yetidata-sample.jpg"
   },  {
     "id": "Work03",
     "title": "THIS IS THE PROJECT TILE",
@@ -52,9 +53,10 @@
       { "name": "Vue" }
     ],
     "icons": [
-      { "name": "githubFull", "w": 24, "h": 24, "style": "icon-filled", "URL": "#" },
-      { "name": "openLink", "w": 25, "h": 25, "style": "icon-filled", "URL": "#" }
+      { "name": "openLink", "w": 25, "h": 25, "style": "icon-filled", "URL": "https://rockbreed-list.web.app/" },
+      { "name": "githubFull", "w": 24, "h": 24, "style": "icon-filled", "URL": "https://github.com/Greenvahn/vue-list-prototype" },
+      { "name": "benhance", "w": 25, "h": 25, "style": "icon-filled", "URL": "https://github.com/Greenvahn/vue-list-prototype" }
     ],
-    "img": "work-img-sample.jpg"
+    "img": "work-rockbreed-sample.jpg"
   }
 ]

@@ -44,6 +44,6 @@
     @apply text-4xl h-auto max-w-prose mb-6 sm:text-5xl md:text-5xl dark:text-white;
   }
   .p-text {
-    @apply max-w-xl mb-4 dark:text-white;
+    @apply mb-4 dark:text-white;
   }
 }

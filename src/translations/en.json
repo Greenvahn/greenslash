@@ -15,8 +15,9 @@
   "home": {
     "title": "I create cool stuff for the web.",
     "content": {
-      "p0": "Hello! I’m Saul, Software Engineer based in London, UK. I'm strong team player who truly believes on collaborative work, always eager to explore new paths and build things for the web with intuitive user interfaces.",
-      "p1": "Second phrase"
+      "p0": "Hello! I’m Saul, software engineer from Spain based in London. I’m into coding, arts, games, philosophy and sports.",
+      "p1": "I attended my first computer class when I was seven and have always been fascinated by the world of computers. After school I completed a degree in Industrial Design and later in Audio-Visual Communications. To deepen my understanding of computer science, I moved to Scotland to study Computer Arts. Since then, I have worked as designer in Prague and as digital designer in Coruña. The last few years, I spent working as a software engineer in the UK in the field of e-learning.",
+      "p2": "I enjoy building web apps in my free time, learning new skills and exploring new paths."
     },
     "buttons": {
       "text": "GET IN TOUCH",
@@ -26,7 +27,7 @@
   "contact": {
     "title": "Get In Touch",
     "content": {
-      "p0": "My inbox is always open to suggestion and new exploring paths. Whether you have a question or just want to say hi, I'll try my best to get back to you!"
+      "p0": "My inbox is always open to suggestions, ideas for projects and collaborations or pointers to new tools and technologies. Whether you have a question or just want to say hi, I'll try my best to get back to you!"
     },
     "buttons": {
       "btn0": {
@@ -36,23 +37,23 @@
     }
   },
   "work": {
-    "title": "Some of the projects I've built",
+    "title": "Some of the things I've built",
     "content": {
-      "p0": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam"
+      "p0": "Below, there are some of my personal featured projects. You can find other projects at the bottom of the page."
     }
   },
   "cards": {
     "w0": {
       "id": "Card00",
-      "title": "PROJECT 00",
+      "title": "XWEATHER",
       "content": {
-        "p0": "Text for project00"
+        "p0": "This single web app allows you to check the weather worldwide for any specific location."
       },
       "frameworks": {
-        "name0": "Node",
-        "name1": "Express",
+        "name0": "Vue",
+        "name1": "Node.js",
         "name2": "Firebase",
-        "name3": "Vue"
+        "name3": "OpenWeather API"
       },
       "icons": {
         "icon0": {
@@ -60,29 +61,29 @@
           "w": 24,
           "h": 24,
           "style": "icon-filled",
-          "URL": "#"
+          "URL": "#URL are placed in cards.json"
         },
         "icon1": {
           "name": "openLink",
           "w": 25,
           "h": 25,
           "style": "icon-filled",
-          "URL": "#"
+          "URL": "#URL are placed in cards.json"
         }
       },
       "img": "work-img-sample.jpg"
     },
     "w1": {
       "id": "Card01",
-      "title": "PROJECT 01",
+      "title": "YETI DATA",
       "content": {
-        "p0": "Text for project01."
+        "p0": "A single-page application that reads CSV files to display data into tables."
       },
       "frameworks": {
-        "name0": "Node",
-        "name1": "Express",
-        "name2": "Firebase",
-        "name3": "Vue"
+        "name0": "Vue",
+        "name1": "Vuex",
+        "name2": "Bulma",
+        "name3": "CSV"
       },
       "icons": {
         "icon0": {
@@ -90,29 +91,29 @@
           "w": 24,
           "h": 24,
           "style": "icon-filled",
-          "URL": "#"
+          "URL": "#URL are placed in cards.json"
         },
         "icon1": {
           "name": "openLink",
           "w": 25,
           "h": 25,
           "style": "icon-filled",
-          "URL": "#"
+          "URL": "#URL are placed in cards.json"
         }
       },
-      "img": "work-img-sample.jpg"
+      "img": "work-xweather-sample.jpg"
     },
     "w2": {
       "id": "Card02",
-      "title": "PROJECT 02",
+      "title": "ROCKBREED",
       "content": {
-        "p0": "Text for project02."
+        "p0": "Website platform concept and prototype for alternative rock music."
       },
       "frameworks": {
-        "name0": "Node",
-        "name1": "Express",
-        "name2": "Firebase",
-        "name3": "Vue"
+        "name0": "Vue",
+        "name1": "Firebase",
+        "name2": "HTML",
+        "name3": "CSS"
       },
       "icons": {
         "icon0": {
@@ -120,17 +121,17 @@
           "w": 24,
           "h": 24,
           "style": "icon-filled",
-          "URL": "#"
+          "URL": "#URL are placed in cards.json"
         },
         "icon1": {
           "name": "openLink",
           "w": 25,
           "h": 25,
           "style": "icon-filled",
-          "URL": "#"
+          "URL": "#URL are placed in cards.json"
         }
       },
-      "img": "work-img-sample.jpg"
+      "img": "work-rockbreed-sample.jpg"
     }
   },
   "about": {
@@ -138,15 +139,23 @@
       "img_lg": "img_lg.png",
       "img_sm": "img_sm.png",
       "content": {
-          "p0": "I like to build products for the internet with great user interfaces and performant experiences. I’m strong team player who truly believes on collaborative work, always eager to explore new paths.",
-          "p1": "In my spare time I create small web applications while learning new programming languages. I also playing handball and running for a few years now. Love technology, videogames and cinema.",
-          "p2": "Here are few technologies I’ve been working with recently:",
-          "ul": {
-            "li0": "Javascript (ES6+)",
-            "li1": "Vue",
-            "li2": "React",
-            "li3": "HTML & (S)CSS",
-            "li4": "Node.js"
+          "p0": "I like to build products for the web with a special focus on great user interfaces and user experiences. My areas of expertise are design, code and accessibility. I perceive myself as team player who truly believes in collaborative work to create new products and overcome any challenges that arise.",
+          "p1": "I work with a range of JavaScript frameworks/libraries like React but my personal go to choice is Vue.",
+          "p2": "Below listed some of the technologies I’ve been working with recently. I like to learn new skills so if you don’t see it on the list, I’m keen to  hear about it and take on new challenges:",
+          "ul1": {
+            "li0": "Technical SKills",
+            "li1": "Javascript (ES6+)",
+            "li2": "Vue",
+            "li3": "React",
+            "li4": "HTML & (S)CSS",
+            "li5": "Node.js"
+          },
+          "ul2": {
+            "li0": "Design SKills",
+            "li1": "Illustrator",
+            "li2": "Photoshop",
+            "li3": "XD",
+            "li4": "Indesign"
           }
      }
   }

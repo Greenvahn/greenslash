@@ -13,10 +13,11 @@
     }
   },
   "home": {
-    "title": "Creo cosas muy guays para la web",
+    "title": "Creo cosas para la web",
     "content": {
-      "p0": "Hola! Soy Saul, Ingeniero the software con base en Londres, Reino Unido. Me considero una pieza importante para cualquier equipo y creo en el trabajo en equipo. Siempre dispuesto para explorar nuevas vias y construir toda variedad de productos para la web.",
-      "p1": "Segunda frase"
+      "p0": "¡Hola! Soy Saúl, un ingeniero de software nacido en España, con base en Londres. Entre mis intereses están: el código y la programación, artes, juegos, filosofía y deportes.",
+      "p1": "Asistí a mis primeras clases de informática con tan solo siete años y desde entonces he estado fascinado por el mundo de los ordenadores. Entre mi educación académica destacan dos títulos universitarios, Diseño Industrial y Comunicación Audio-visual. En mi último año como universitario he viajado a Escocia para estudiar “Computer Arts”, dónde he podido profundizar todavía más si cabe en el mundo de los ordenadores. Desde entonces, he trabajado como diseñador de producto en Praga (República Checa) y como diseñador digital en la Coruña. En estos últimos años he trabajado como ingeniero de software en el Reino Unido, especializado en el área de e-learning.",
+      "p2": "Disfruto mi tiempo libre construyendo nuevas aplicaciones web, aprendiendo nuevas habilidades y explorando nuevos caminos en el mundo de la programación."
     },
     "buttons": {
       "text": "Ponte en contacto",
@@ -26,7 +27,7 @@
   "contact": {
     "title": "Ponte en contacto",
     "content": {
-      "p0": "Mi e-mail siempre esta abierto a propuestas y nuevos proyectos."
+      "p0": "Mi inbox siempre está abierto a nuevas ideas para proyectos y colaboraciones o simplemente para sugerencias acerca de nuevas tecnologías o herramientas. Ya sea que tengas una pregunta o simplemente quieres saludar, ¡haré todo lo posible para responderte!"
     },
     "buttons": {
       "btn0": {
@@ -38,21 +39,21 @@
   "work": {
     "title": "Algunos de mis proyectos",
     "content": {
-      "p0": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam"
+      "p0": "Estos son algunos de mis proyectos personales destacados. Puedes ver otros proyectos al final de esta página."
     }
   },
   "cards": {
     "w0": {
       "id": "Card00",
-      "title": "PROYECTO 00",
+      "title": "XWEATHER",
       "content": {
-        "p0": "Contenido del proyecto 00"
+        "p0": "Esta web app te deja comprobar el tiempo en cualquier ricón del mundo."
       },
       "frameworks": {
-        "name0": "Node",
-        "name1": "Express",
+        "name0": "Vue",
+        "name1": "Node.js",
         "name2": "Firebase",
-        "name3": "Vue"
+        "name3": "OpenWeather API"
       },
       "icons": {
         "icon0": {
@@ -74,15 +75,15 @@
     },
     "w1": {
       "id": "Card01",
-      "title": "PROYECTO 01",
+      "title": "YETI DATA",
       "content": {
-        "p0": "Contenido del proyecto 01."
+        "p0": "Applicación web que lee archivos CSV para mostrar la información en tablas."
       },
       "frameworks": {
-        "name0": "Node",
-        "name1": "Express",
-        "name2": "Firebase",
-        "name3": "Vue"
+        "name0": "Vue",
+        "name1": "Vuex",
+        "name2": "Bulma",
+        "name3": "CSV"
       },
       "icons": {
         "icon0": {
@@ -104,15 +105,15 @@
     },
     "w2": {
       "id": "Card02",
-      "title": "PROYECTO 02",
+      "title": "ROCKBREED",
       "content": {
-        "p0": "Contenido del proyecto 02."
+        "p0": "Rock alternativo en la web - prototipo de plataforma web."
       },
       "frameworks": {
-        "name0": "Node",
-        "name1": "Express",
-        "name2": "Firebase",
-        "name3": "Vue"
+        "name0": "Vue",
+        "name1": "Firebase",
+        "name2": "HTML",
+        "name3": "CSS"
       },
       "icons": {
         "icon0": {
@@ -138,15 +139,23 @@
       "img_lg": "img_lg.png",
       "img_sm": "img_sm.png",
       "content": {
-          "p0": "Me gusta construir productos para internet con buenas interfaces que generen una buea eperiencia en el usuario ademas de un buen rendimiento.",
-          "p1": "En mi tiempo libre creo pequenas aplicaciones web mientras aprendo nuevos lenguajes de programción y consolido conocimentos. También soy una persona muy activa: juego al balónmano y me gusta el running. Amo la tecnologia, videojuegos y el cine.",
-          "p2": "Aqui dejo algunas de las técnologias que he estado usando últimamente",
-          "ul": {
-            "li0": "Javascript (ES6+)",
-            "li1": "Vue",
-            "li2": "React",
-            "li3": "HTML & (S)CSS",
-            "li4": "Node.js"
+          "p0": "Me gusta construir y desarrollar productos para la web con una atención especial en las interfaces de usuario (UI) . Soy experto en áreas de diseño, código y programación. Creo en el trabajo en equipo como pieza fundamental para crear nuevos productos y solucionar los posibles retos que se puedan presentar.",
+          "p1": "Trabajo con diferentes frameworks o librerías de Javascript como React pero mi preferencia personal para el día a día es Vue.",
+          "p2": "Aquí os dejo algunas de las tecnologías que he estado usando recientemente. Me gusta aprender nuevas habilidades y lenguajes así que, si no ves algo en la lista, simplemente envíame un mensaje con tu propuesta.",
+          "ul1": {
+            "li0": "Código y programación",
+            "li1": "Javascript (ES6+)",
+            "li2": "Vue",
+            "li3": "React",
+            "li4": "HTML & (S)CSS",
+            "li5": "Node.js"
+          },
+          "ul2": {
+            "li0": "Diseño y Artes digitales",
+            "li1": "Illustrator",
+            "li2": "Photoshop",
+            "li3": "XD",
+            "li4": "Indesign"
           }
      }
   }
