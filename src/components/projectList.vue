@@ -2,10 +2,10 @@
   <div
     v-for="(project, projectIndex) in datalist"
     :key="projectIndex"
-    class="flex flex-col col-span-3 text-sm p-3 bg-white text-black border border-gray-200 py-2 md:flex-row md:space-x-4 dark:bg-black dark:text-white dark:border-gray-900 dark:border-r-0"
+    class="flex flex-col col-span-3 text-sm p-3 bg-white text-black border border-gray-200 py-2 pr-12 md:flex-row md:space-x-4 md:pr-8 dark:bg-black dark:text-white dark:border-gray-900 dark:border-r-0"
   >
     <h3 class="font-bold w-full md:w-1/3">{{ t(`projectList.listItem.project${projectIndex}.id`) }}</h3>
-    <p v-for="(p, pIndex) in project.content" :key="pIndex" class="w-full md:w-2/3">
+    <p v-for="(p, pIndex) in project.content" :key="pIndex" class="w-full max-w-prose">
       {{ t(`projectList.listItem.project${projectIndex}.content.p${pIndex}`) }}
     </p>
     <ul class="flex flex-row space-x-4 font-museomoderno w-1/3 mt-5 text-gray-400 md:mt-0">
