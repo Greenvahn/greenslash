@@ -2,7 +2,7 @@
   <div
     v-for="(project, projectIndex) in datalist"
     :key="projectIndex"
-    class="flex flex-col col-span-3 text-sm p-3 bg-white text-black border border-gray-200 py-2 pr-12 md:flex-row md:space-x-4 md:pr-8 dark:bg-black dark:text-white dark:border-gray-900 dark:border-r-0"
+    class="flex flex-col col-span-3 text-sm p-3 bg-white text-black border border-gray-200 py-2 pr-12 md:flex-row md:space-x-4 md:pr-2 lg:pr-0 dark:bg-black dark:text-white dark:border-gray-900 dark:border-r-0"
   >
     <h3 class="font-bold w-full md:w-1/3">{{ t(`projectList.listItem.project${projectIndex}.id`) }}</h3>
     <p v-for="(p, pIndex) in project.content" :key="pIndex" class="w-full max-w-prose">
@@ -13,7 +13,7 @@
         {{ t(`projectList.listItem.project${projectIndex}.labels.name${labelIndex}`) }}
       </li>
     </ul>
-    <div id="links-box" class="absolute right-5 flex justify-end mr-2 w-1/4 md:relative md:right-0">
+    <div id="links-box" class="absolute right-5 flex justify-end mr-2 w-1/4 md:relative md:right-0 lg:right-0">
       <div
         v-for="(icon, inconIndex) in project.icons"
         :key="inconIndex"
