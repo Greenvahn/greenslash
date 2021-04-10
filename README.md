@@ -1,6 +1,6 @@
 
 
-<p align="center"><img alt="logo" width="30%" height="20%" src="https://github.com/Greenvahn/greenslash/blob/master/src/assets/Web%201920%20%E2%80%93%2046.png?raw=true"></p>
+<p align="center"><img alt="logo" width="10%" height="10%" src="https://github.com/Greenvahn/greenslash/blob/master/src/assets/Web%201920%20%E2%80%93%2046.png?raw=true"></p>
 
 <h1 align="center">greenslash.dev</h1>
 
