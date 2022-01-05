@@ -5,7 +5,7 @@
 <h1 align="center">greenslash.dev</h1>
 
 <h3 align="center" style="margin-bottom:20px">
-The first version of <a href="greenslash.dev" _target="blank">greenslash.dev</a> built with <a href="https://v3.vuejs.org/" _target="blank">Vue3</a> and hosted with <a href="https://firebase.google.com/" _target="blank"> firebase </a></h3>
+The first version of <a href="https://greenslash.dev/" _target="blank">greenslash.dev</a> built with <a href="https://v3.vuejs.org/" _target="blank">Vue3</a> and hosted with <a href="https://firebase.google.com/" _target="blank"> firebase </a></h3>
 <p align="center">
   <a href="https://img.shields.io/github/workflow/status/Greenvahn/greenslash/Deploy" target="_blank">
     <img alt="build" src="https://img.shields.io/github/workflow/status/Greenvahn/greenslash/Deploy%20to%20Firebase%20Hosting%20on%20merge">
