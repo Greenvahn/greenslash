@@ -17,15 +17,18 @@
       },
       {
         "ul1": [
+          { "li": "Technical SKills"},
           { "li": "Javascript (ES6+)" },
           { "li": "Vue" },
           { "li": "React" },
           { "li": "HTML & (S)CSS" },
-          { "li": "Node.js" }
+          { "li": "Node.js" },
+          { "li": "AWS" }
         ]
       },
       {
         "ul2": [
+          { "li": "Design SKills"},
           { "li": "Illustrator" },
           { "li": "Photoshop" },
           { "li": "XD" },
